@@ -1,0 +1,25 @@
+.swip_slider {
+  animation: swip 1s ease-in-out;
+}
+@keyframes swip {
+  0% {
+    left: -100px;
+    opacity: 1;
+  }
+  25% {
+    left: -2500px;
+    opacity: 0.5;
+  }
+  50% {
+    left: -500px;
+    opacity: 0;
+  }
+  75% {
+    left: 750px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}

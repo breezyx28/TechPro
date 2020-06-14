@@ -1,0 +1,42 @@
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10000000000000;
+}
+
+.loader .logo_loader {
+  position: fixed;
+  background-image: url(../img/logo/technic_3.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: beat 1.5s linear infinite;
+  z-index: 10000000000000;
+}
+@keyframes beat {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    background-image: url(../img/logo/technic_4.png);
+  }
+  100% {
+    opacity: 1;
+  }
+}

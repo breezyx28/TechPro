@@ -1,0 +1,110 @@
+/* top nav */
+.nav_logo {
+  float: left;
+  font-weight: 900;
+  font-size: 1rem;
+  color: white;
+  padding-left: 1rem;
+}
+.nav_logo_scroll {
+  color: #111114 !important;
+}
+#top_nav {
+  position: fixed;
+  width: 100vw;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+.top_nav_scroll {
+  background-color: white !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  transition: 0.4s ease-in-out;
+}
+
+#top_nav .nav-item .nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#top_nav .nav-item .nav-link_scroll {
+  color: #111114 !important;
+}
+#top_nav .options div {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* end top nav */
+
+/* ////////////////////////////////////// */
+/* category navbar */
+.cat_title_type_nav .col-4 {
+  text-align: center;
+  padding: 1rem;
+  /* transition: 0.3s ease-in-out; */
+}
+.cat_title_type_nav .col-4:hover {
+  cursor: pointer;
+  border-bottom: 2px solid var(--blue);
+  margin-bottom: -2px;
+}
+
+/* image holder */
+
+.load_more {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.load_more:hover {
+  font-size: 3.3rem;
+  transform: rotate(180deg);
+}
+.contents_load {
+  background-color: white !important;
+  color: transparent !important;
+  width: 50px;
+  height: 50px;
+  box-shadow: none !important;
+  border-top: 1px solid #007bff;
+  border-radius: 50% !important;
+  animation: ring 1s linear infinite;
+}
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* end image holder */
+
+/* contact sub */
+.contact_sub {
+  width: 100vw;
+  /* height: 50vh; */
+  padding: 3rem;
+}
+.contact_sub_wrapper {
+  width: 100%;
+  height: 100%;
+}
+.contact_sub_email {
+  background-color: transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 2px solid #0000001f;
+  transition: border 0.3s ease-in-out;
+  outline: none;
+  padding-top: 1.5rem;
+}
+.contact_sub_email:hover {
+  background-color: transparent;
+  border-bottom: 2px solid var(--blue);
+}
+.contact_sub_email::placeholder {
+  font-weight: 300;
+  color: rgba(83, 81, 81, 0.7);
+}
+
+/* contact sub */

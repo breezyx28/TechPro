@@ -1,0 +1,503 @@
+{
+  "category": {
+    "food": [
+      {
+        "image_url": "img/products/food/cheetos.jpg",
+        "company": "foody",
+        "key_word": ["chips", "snaks", "canned", "cheetos"],
+        "name": "chips cheetos",
+        "price": 2.99,
+        "total_quanitiy": 283,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/doritos.png",
+        "company": "foody",
+        "key_word": ["chips", "snaks", "canned", "doritos"],
+        "name": "chips doritos",
+        "price": 1.99,
+        "total_quanitiy": 23,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/laze.gif",
+        "company": "foody",
+        "key_word": ["chips", "snaks", "canned", "laze"],
+        "name": "chips laze",
+        "price": 4.0,
+        "total_quanitiy": 83,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/prengels.jpg",
+        "company": "foody",
+        "key_word": ["chips", "snaks", "canned", "prengels"],
+        "name": "chips prengels",
+        "price": 5.0,
+        "total_quanitiy": 28,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/nutella.jpg",
+        "company": "foody",
+        "key_word": ["chocolate", "canned"],
+        "name": "nutella",
+        "price": 25.0,
+        "total_quanitiy": 43,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/bueno.jpg",
+        "company": "foody",
+        "key_word": ["chocolate", "snaks", "canned"],
+        "name": "kinder bueno",
+        "price": 10.0,
+        "total_quanitiy": 20,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/7days.jpg",
+        "key_word": ["chocolate", "snaks", "canned", "cake"],
+        "name": "7days",
+        "price": 5.0,
+        "total_quanitiy": 200,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/snickers.jpg",
+        "company": "foody",
+        "key_word": ["chocolate", "snaks", "canned"],
+        "name": "snickers",
+        "price": 5.0,
+        "total_quanitiy": 20,
+        "rate": 5
+      }
+    ],
+    "clothes": [
+      {
+        "image_url": "img/products/clothes/cap1.jpg",
+        "company": "ZARA",
+        "name": "cap",
+        "key_word": ["cap", "hat", "headware"],
+        "price": 20.0,
+        "color": "bluish",
+        "material": "teal",
+        "size": 4,
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/cap2.jpg",
+        "company": "ZARA",
+        "name": "cap",
+        "key_word": ["cap", "hat", "headware"],
+        "price": 15.0,
+        "color": "colorful",
+        "material": "teal",
+        "size": 4,
+        "total_quantity": 20,
+        "rate": 3
+      },
+      {
+        "image_url": "img/products/clothes/frame.jpg",
+        "company": "RayBan",
+        "name": "RayBan Shaddy Frame",
+        "key_word": ["Frame", "glass", "eyeglass", "shades"],
+        "price": 20.0,
+        "color": "black",
+        "material": "glass",
+        "size": "medium",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/clothes/hat.jpg",
+        "company": "OBEY",
+        "name": "hat",
+        "key_word": ["hat", "headware"],
+        "price": 20.0,
+        "color": "bluish",
+        "material": "wool",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/fram2.jpg",
+        "company": "RAYBAN",
+        "name": "Snow Skate Frame",
+        "key_word": ["frame", "eyeglass", "glasses"],
+        "price": 20.0,
+        "color": "sky-blue",
+        "material": "glass",
+        "size": "L",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/hand_bag.jpg",
+        "company": "GUCCI",
+        "name": "Black Gucci Women Hand-Bag",
+        "key_word": ["handbag", "Bag", "purse"],
+        "price": 200.0,
+        "color": "Black",
+        "material": "leather",
+        "size": "L",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/clothes/shirt1.jpg",
+        "company": "ZARA",
+        "name": "casual shirt",
+        "key_word": ["shirt", "tops", "casual"],
+        "price": 25.0,
+        "color": "pink",
+        "material": "cotton",
+        "size": "L",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/shirt2.jpg",
+        "company": "NIKE",
+        "name": "T-Shirt",
+        "key_word": ["T-Shirt", "tops"],
+        "price": 20.0,
+        "color": "Orange",
+        "material": "cotton",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/shirt3.jpg",
+        "company": "ARMANI",
+        "name": "Long Sleeves Shirt",
+        "key_word": ["Shirt", "tops", "casual", "long sleeves"],
+        "price": 27.0,
+        "color": "WHITE",
+        "material": "cotton",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 3
+      },
+      {
+        "image_url": "img/products/clothes/shoe1.jpg",
+        "company": "ADIDAS",
+        "name": "Adidas White Shoes",
+        "key_word": ["Shoes", "footware", "Sport "],
+        "price": 74.99,
+        "color": "WHITE",
+        "material": "palstic",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/shoe2.jpg",
+        "company": "NIKE",
+        "name": "Nike Black Snkear",
+        "key_word": ["Shoes", "footware", "Snkear"],
+        "price": 120.0,
+        "color": "Black",
+        "material": "palstic",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/shoe3.jpg",
+        "company": "NIKE",
+        "name": "Nike Red Shoe",
+        "key_word": ["Shoes", "footware", "Snkear"],
+        "price": 400.0,
+        "color": "Red",
+        "material": "Cotton",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/clothes/shoe4.jpg",
+        "company": "ALL STARS",
+        "name": "Casual Shoe",
+        "key_word": ["Shoes", "footware"],
+        "price": 95.0,
+        "color": "brown",
+        "material": "Cotton",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 3
+      },
+      {
+        "image_url": "img/products/clothes/shoe5.jpg",
+        "company": "UNKNOWN",
+        "name": "Casual leather Shoe",
+        "key_word": ["Shoes", "footware"],
+        "price": 95.0,
+        "color": "brown",
+        "material": "Leather",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/clothes/women_shoe.jpg",
+        "company": "PRADA",
+        "name": "High Heel Women Shoe",
+        "key_word": ["Shoes", "footware", "Women Shoe"],
+        "price": 300.0,
+        "color": "brown",
+        "material": "Leather",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/women_shorts.jpg",
+        "company": "JINKES",
+        "name": "High Heel Women Shoe",
+        "key_word": ["Short", "shorts", "Women Shorts", "Bottoms"],
+        "price": 300.0,
+        "color": "different",
+        "material": "Jeans",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/watch1.jpg",
+        "company": "SAPPHIRE",
+        "name": "Hand-Watch",
+        "key_word": ["Watch", "hand watch", "Accessories", "hand"],
+        "price": 600.0,
+        "color": "bluish",
+        "material": "metal",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 5
+      }
+    ],
+    "Furniture": [
+      {
+        "image_url": "img/products/Furnitures/5ac9ab8521128c741465e4cddce2a70c.jpg",
+        "company": "ARMADA",
+        "name": "Woody Wall Desk",
+        "key_word": ["Desk", "office"],
+        "price": 200.0,
+        "color": "BLACK-BROWN",
+        "material": "Wood",
+        "size": "29 inch",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/90d6d8b35dbe78484d7078e93255ba10.jpg",
+        "company": "ARMADA",
+        "name": "Black shelf",
+        "key_word": ["shelf", "office"],
+        "price": 400.0,
+        "color": "Black",
+        "material": "Wood",
+        "size": "40 inch",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/172bf8ac861d868baeb6113a3109d111.jpg",
+        "company": "ARMADA",
+        "name": "Books shelf",
+        "key_word": ["shelf", "office", "books shelf"],
+        "price": 400.0,
+        "color": "brown",
+        "material": "Wood",
+        "size": "62 inch",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/8222fc21aa500ffeb9c1b087c26a0212.jpg",
+        "company": "ARMADA",
+        "name": "living room couch",
+        "key_word": ["living room", "couch", "sofa"],
+        "price": 700.0,
+        "color": "brown",
+        "material": "polyester",
+        "size": "6 feet",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/a93c8af3e74de68e48c12d4471df0c12.jpg",
+        "company": "ARMADA",
+        "name": "Food Table Set",
+        "key_word": ["living room", "table", "decor"],
+        "price": 250.0,
+        "color": " brown-black",
+        "material": "wood",
+        "size": "2 feet",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/c59fce63d6cf963d28005432aed543ed.jpg",
+        "company": "ARMADA",
+        "name": "Bed romm small shelf",
+        "key_word": ["bed room", "shelf", "decor"],
+        "price": 340.0,
+        "color": " teal-white-grey",
+        "material": "wood",
+        "size": "54 inch",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/d45c5563d9a1378abdc7116ad30a9857.jpg",
+        "company": "ARMADA",
+        "name": "Woody Relaxing Chair",
+        "key_word": ["living room", "chair", "decor"],
+        "price": 170.0,
+        "color": " brown",
+        "material": "wood",
+        "size": "medium",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/michael-dolejs-eH1zeKa9u4c-unsplash.jpg",
+        "company": "ARMADA",
+        "name": "Wall lamp",
+        "key_word": ["lamp", "lighting", "decor"],
+        "price": 70.0,
+        "color": " black",
+        "material": "alumineum",
+        "size": "-",
+        "total_quantity": 120,
+        "rate": 5
+      }
+    ],
+    "Electronics": [
+      {
+        "image_url": "img/products/Electronics/blender1.jpg",
+        "company": "PANASONIC",
+        "name": "Blender",
+        "key_word": ["kitchen", "blender", "cooking", "household"],
+        "price": 90.0,
+        "color": "BLACK",
+        "material": "fiber",
+        "size": "medium",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/microwave.jpg",
+        "company": "PANASONIC",
+        "name": "Black Modern Microwave",
+        "key_word": ["kitchen", "Microwave", "cooking", "household"],
+        "price": 170.0,
+        "color": "BLACK",
+        "material": "metal",
+        "size": "medium",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/oven.jpg",
+        "company": "PANASONIC",
+        "name": "Black Oven",
+        "key_word": ["kitchen", "Oven", "cooking", "household"],
+        "price": 100.0,
+        "color": "BLACK",
+        "material": "metal",
+        "size": "medium",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/smart_screen2.jpg",
+        "company": "SAMSUNG",
+        "name": "Samsung Smart Screen",
+        "key_word": [
+          "living room",
+          "tv",
+          "smart screen",
+          "screen",
+          "household"
+        ],
+        "price": 1000.0,
+        "color": "silver",
+        "material": "metal",
+        "size": "64 inch",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/speaker1.jpg",
+        "company": "FLUX",
+        "name": "Modern Speakers 1",
+        "key_word": ["room", "speaker", "speakers", "sound", "household"],
+        "price": 50.0,
+        "color": "beige",
+        "material": "metal",
+        "size": "small",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/speaker2.jpg",
+        "company": "FLUX",
+        "name": "Modern Speakers 2",
+        "key_word": ["room", "speaker", "speakers", "sound", "household"],
+        "price": 50.0,
+        "color": "beige",
+        "material": "metal",
+        "size": "small",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/stove1.jpg",
+        "company": "PANDA",
+        "name": "Modern Stove",
+        "key_word": ["kitchen", "stove", "cooking", "household"],
+        "price": 112.0,
+        "color": "black",
+        "material": "GLASS-FIBER-METAL",
+        "size": "medium",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/vacuum.jpg",
+        "company": "FLUX",
+        "name": "Modern vacuum",
+        "key_word": ["room", "vacuum", "clean", "household"],
+        "price": 200.0,
+        "color": "beige",
+        "material": "METAL",
+        "size": "medium",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/wash_machine.png",
+        "company": "FLUX",
+        "name": "Modern Wash Machine",
+        "key_word": [
+          "bathroom",
+          "washing",
+          "clean",
+          "wash machine",
+          "household"
+        ],
+        "price": 990.0,
+        "color": "black",
+        "material": "METAL",
+        "size": "medium",
+        "total_quantity": 120,
+        "rate": 5
+      }
+    ]
+  }
+}

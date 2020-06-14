@@ -1,0 +1,188 @@
+/* shoping side */
+
+.shoping_side {
+  position: relative;
+  background-image: url(../img/moritz-kindler-tOMZ8UTw6uM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* end of shoping side */
+
+/* catalog */
+
+.catalog_sec {
+  width: 100vw;
+  height: 100vh;
+}
+
+.cat_head_line {
+  border-bottom: 3px solid black;
+  margin: 0 20px 0 20px;
+}
+
+.cat_header {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cat_container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.cat_img1 img,
+.cat_img2 img,
+.cat_img3 img,
+.cat_img4 img {
+  object-fit: cover;
+  width: 100%;
+  height: 260px;
+}
+
+.cat_sub_header h1 {
+  font-weight: 600;
+}
+.cat_sub_header small {
+  font-weight: 300;
+}
+
+/* end of catalog */
+
+/* most sell */
+.most_sell {
+  position: relative;
+  /* width: 100vw;
+  height: 100vh; */
+}
+.most_sell_header {
+  margin: 0;
+  padding: 3rem;
+}
+.most_sell_container {
+  width: 100%;
+  height: 100%;
+}
+.most_sell_container img {
+  position: relative;
+  object-fit: contain;
+  width: 100%;
+  height: 75%;
+  transition: all 0.2s ease-in-out;
+}
+.most_sell_container img:hover {
+}
+.most_sell_img_btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 10%;
+  /* border: 1px solid black; */
+  bottom: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000000;
+  visibility: hidden;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.most_sell_holder1:hover .item1,
+.most_sell_holder2:hover .item2,
+.most_sell_holder3:hover .item3,
+.most_sell_holder4:hover .item4 {
+  transition: 0.66s;
+  visibility: visible;
+}
+.most_sell_img_btn button {
+  align-self: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.most_sell_pricing {
+  color: #3f3f3f;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* end of most sell */
+
+/* middle screen */
+
+.middle_screen {
+  position: relative;
+  width: 100vw;
+  /* height: 100vh + 10vw; */
+  background-color: tomato;
+}
+.middle_screen_wrapper {
+  position: relative;
+}
+
+.middle_screen_holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.middle_screen_header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white !important;
+}
+.middle_screen_btn {
+  position: relative;
+  padding: 1rem;
+  width: 40%;
+  height: 10%;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.12);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.middle_screen_btn:hover {
+  cursor: pointer;
+  /* transition: all 0.66s cubic-bezier(0.95, 0.05, 0.795, 0.035); */
+  background-color: var(--blue);
+  border: 2px solid transparent;
+}
+/* end middle screen */
+
+/* contact sub */
+.contact_sub {
+  width: 100vw;
+  /* height: 50vh; */
+  padding: 3rem;
+}
+.contact_sub_wrapper {
+  width: 100%;
+  height: 100%;
+}
+.contact_sub_email {
+  background-color: transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 2px solid #0000001f;
+  transition: border 0.3s ease-in-out;
+  outline: none;
+  padding-top: 1.5rem;
+}
+.contact_sub_email:hover {
+  background-color: transparent;
+  border-bottom: 2px solid var(--blue);
+}
+.contact_sub_email::placeholder {
+  font-weight: 300;
+  color: rgba(83, 81, 81, 0.7);
+}
+
+/* contact sub */
