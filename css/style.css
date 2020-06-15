@@ -30,6 +30,7 @@
   z-index: 10000;
 }
 /* .element_holder .element1 .elm_header .elm_content; */
+
 .swiper-container .buttons-wrapper .element_holder {
   display: flex;
   flex-direction: row;
@@ -37,7 +38,10 @@
   justify-content: space-between;
   height: 20vh;
 }
-
+.elm_header {
+  text-transform: uppercase;
+  font-weight: 100 !important;
+}
 .element_holder .element1,
 .element2,
 .element3,
@@ -46,14 +50,16 @@
   align-self: flex-end;
   width: 18vw;
   height: 15vh;
-  font-size: 0.8rem;
+  font-size: 2vw;
   font-weight: 100 !important;
   border: 0.5px solid white;
 }
 .elm_content {
   font-weight: 100 !important;
 }
-
+.elm_content h6 {
+  font-size: 2.5vw;
+}
 .element1,
 .element2,
 .element3,
