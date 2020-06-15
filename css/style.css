@@ -325,7 +325,8 @@
 .line_day {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 .op_lower_wrapper_fade {
   background-color: transparent !important;
