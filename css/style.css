@@ -301,7 +301,7 @@
   transform: translate(-50%, -50%);
 }
 .op_lower_content {
-  line-height: 1rem;
+  line-height: 0.8rem;
   position: relative;
   width: 100%;
   height: 100%;
@@ -311,6 +311,7 @@
   align-items: center;
 }
 .op_lower_content .line {
+  font-size: 1.6vw;
   position: relative;
   width: 100%;
   height: 100%;
