@@ -1,4 +1,8 @@
 /* image slider */
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
+}
 .swiper-slide img {
   box-shadow: inset 0 0 0 1000px rgba(0, 83, 119, 0.7) !important;
   /* z-index: 3; */
@@ -6,10 +10,9 @@
 .swiper-slide > .slider1,
 .slider2,
 .slider3 {
-  height: 100vh;
-  width: 100vw;
-  background-size: contain;
-  background-position: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .swiper-slide .caption {
