@@ -105,4 +105,24 @@ $(document).ready(function () {
     default:
       break;
   }
+
+  $('.cart_main_desc_buy_btn').click(function () {
+    var quantity = $('#quantity').val(),
+      total_price = $('.cart_main_desc_price ').attr('value'),
+      product_name = $('.cart_main_desc_title ').text();
+
+    $(this).attr(
+      'href',
+      'mailto:mohamedx.28@gmail.com?subject=Buying&body= Product name : ' +
+        product_name +
+        ', Category : ' +
+        category +
+        'Product CODE : #' +
+        code +
+        ', Quantity : ' +
+        quantity +
+        ', Total Price :$' +
+        total_price,
+    );
+  });
 });

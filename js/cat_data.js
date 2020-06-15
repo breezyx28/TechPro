@@ -107,7 +107,7 @@ $(document).ready(function () {
           item = value.category.food[i];
           content(i, cat, item.image_url, item.name, item.price, item.rate);
         }
-        if (cat == 'Furniture') {
+        if (cat == 'furniture') {
           item = value.category.Furniture[i];
           content(i, cat, item.image_url, item.name, item.price, item.rate);
         }
@@ -151,7 +151,7 @@ $(document).ready(function () {
       });
       break;
     case 'furniture':
-      view6('Furniture');
+      view6('furniture');
       $('.load_more').click(function () {
         loading_ring();
         w = w + 6;
@@ -159,7 +159,7 @@ $(document).ready(function () {
         k = i * v + 6;
         for (var c = w; c <= k - 1; c++) {
           if (c <= furn - 1) {
-            category('Furniture', c);
+            category('furniture', c);
           }
         }
       });
