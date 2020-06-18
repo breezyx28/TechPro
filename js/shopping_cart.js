@@ -32,56 +32,41 @@ $(document).ready(function () {
   //   external file
   $.getJSON('../json/category.json', function (data) {
     var local_array = JSON.parse(localStorage.getItem('key'));
-    var leng = local_array.length;
 
-    // var clothes = data.category.clothes,
-    //   Furniture = data.category.Furniture,
-    //   food = data.category.food,
-    //   Electronics = data.category.Electronics;
-
-    function compare(data1, category) {
+    function compare(data1) {
       $.each(data1, function (index1, value1) {
-        console.log(value1);
-
         $.each(local_array, function (index2, value2) {
-          if (value1.clothes[value2.code] && category == 'clothes') {
+          if (value1.clothes[value2.code] && value2.category == 'clothes') {
             let a = value1.clothes[value2.code];
             tr(a.image_url, a.name, a.price, value2.code);
             console.log(value1.clothes[value2.code]);
           }
-          if (value1.Furniture[value2.code] && category == 'Furniture') {
+          if (value1.Furniture[value2.code] && value2.category == 'Furniture') {
             let a = value1.Furniture[value2.code];
-            tr(a.image_url, a.name, a.price.value2.code);
+            tr(a.image_url, a.name, a.price, value2.code);
             console.log(value1.Furniture[value2.code]);
           }
-          if (value1.food[value2.code] && category == 'food') {
+          if (value1.food[value2.code] && value2.category == 'food') {
             let a = value1.food[value2.code];
-            tr(a.image_url, a.name, a.price.value2.code);
+            tr(a.image_url, a.name, a.price, value2.code);
             console.log(value1.food[value2.code]);
           }
-          if (value1.Electronics[value2.code] && category == 'Electronics') {
+          if (
+            value1.Electronics[value2.code] &&
+            value2.category == 'Electronics'
+          ) {
             let a = value1.Electronics[value2.code];
-            tr(a.image_url, a.name, a.price.value2.code);
+            tr(a.image_url, a.name, a.price, value2.code);
             console.log(value1.Electronics[value2.code]);
           }
         });
       });
     }
-
-    compare(data, 'clothes');
-    if (local_array['clothes']) {
-      compare(data, 'clothes');
+    if (local_array == '' || local_array == false) {
+      $('.shopping_cart_table_rows').append(
+        '<tr class="text-center"><td colspan="4">No Data</td></tr>',
+      );
     }
-    if (local_array['Furniture']) {
-      compare(data, 'Furniture');
-    }
-    if (local_array['food']) {
-      compare(data, 'food');
-    }
-    if (local_array['Electronics']) {
-      compare(data, 'Electronics');
-    }
-
-    // console.log(local_array);
+    compare(data);
   });
 });

@@ -169,6 +169,7 @@ body::-webkit-scrollbar {
 #top_nav .nav-item .nav-link {
   color: white;
   text-transform: uppercase;
+  font-weight: 390;
   font-size: 14px;
 }
 #top_nav .nav-item .nav-link_scroll {

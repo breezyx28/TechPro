@@ -216,7 +216,6 @@ $(document).ready(function () {
     cart_object.code = code;
     cart_object.category = url_params;
 
-    // var exist = cart_array.find((elem) => elem.code == code);
     var length_storage = localStorage.length;
     console.log(localStorage);
 
@@ -227,7 +226,9 @@ $(document).ready(function () {
       $('.cart_number').text(data.length);
     } else {
       let test_data = JSON.parse(localStorage.getItem('key'));
-      let local_exists = test_data.find((elem) => elem.code == code);
+      let local_exists = test_data.find(
+        (elem) => elem.code == code && elem.category == url_params,
+      );
 
       console.log('test_data :', test_data, 'local_exists :', local_exists);
       if (local_exists) {
@@ -246,18 +247,11 @@ $(document).ready(function () {
       }
     }
 
-    // if (exist) {
-    //   alert('exists');
-    // } else {
-    //   cart_array.push(cart_object);
-    //   localStorage.setItem('key', JSON.stringify(cart_array));
     // }
 
     console.log(localStorage);
-    // localStorage.clear();
   });
   let data = JSON.parse(localStorage.getItem('key'));
-  // console.log('localStorage Length', JSON.parse(data.length));
   $('.cart_number').text(data.length);
   console.log();
 });
