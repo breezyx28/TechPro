@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var tr = function (img, name, price, code) {
     let tr = `<tr class="bg-white border-bottom">
-                <td class="align-middle d-flex flex-row align-items-center ml-2">
+                <td class="align-middle d-flex flex-row align-items-center">
                 <img
                     src="${img}"
                     width="80"
@@ -16,7 +16,7 @@ $(document).ready(function () {
                     name="quantity"
                     id="shopping_quantity"
                     class="border pl-4 pr-4 pt-2 pb-2 text-center"
-                    style="width: 14vw;"
+                    style="width: 14vw;background-size:cover;"
                     min="1"
                     value="1"
                 /></td>
