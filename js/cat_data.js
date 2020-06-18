@@ -11,7 +11,7 @@ $(document).ready(function () {
   //get JSON from External file
   $.getJSON('../json/category.json', function (data) {
     $.each(data, function (index, value) {
-      console.log('data :', data);
+      // console.log('data :', data);
 
       items.push(data);
       categ = value.clothes.length;
@@ -83,7 +83,7 @@ $(document).ready(function () {
             <a href="cart.html?category=${cat}&code=${code}" class="btn btn-outline-secondary btn-sm" style="text-decoration:none;"><b>$${price}</b></a>
          
           <button
-            class="btn btn-outline-secondary btn-sm text-center"
+            class="cart_btn btn btn-outline-secondary btn-sm text-center" value="${code}"
           >
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
           </button>
@@ -202,4 +202,62 @@ $(document).ready(function () {
     default:
       break;
   }
+
+  // cart section
+  var cart_array = [];
+  var local_array = '';
+
+  $(document).on('click', '.cart_btn', function () {
+    var code = $(this).val();
+    var cart_object = {
+      code: '',
+      category: '',
+    };
+    cart_object.code = code;
+    cart_object.category = url_params;
+
+    // var exist = cart_array.find((elem) => elem.code == code);
+    var length_storage = localStorage.length;
+    console.log(localStorage);
+
+    if (length_storage < 1) {
+      cart_array.push(cart_object);
+      localStorage.setItem('key', JSON.stringify(cart_array));
+      let data = JSON.parse(localStorage.getItem('key'));
+      $('.cart_number').text(data.length);
+    } else {
+      let test_data = JSON.parse(localStorage.getItem('key'));
+      let local_exists = test_data.find((elem) => elem.code == code);
+
+      console.log('test_data :', test_data, 'local_exists :', local_exists);
+      if (local_exists) {
+        console.log('local_exists : ', local_exists);
+
+        alert('exists');
+      } else {
+        console.log('cart_array :', cart_array);
+
+        local_array = JSON.parse(localStorage.getItem('key'));
+
+        local_array.push(cart_object);
+        localStorage.setItem('key', JSON.stringify(local_array));
+        let data = JSON.parse(localStorage.getItem('key'));
+        $('.cart_number').text(data.length);
+      }
+    }
+
+    // if (exist) {
+    //   alert('exists');
+    // } else {
+    //   cart_array.push(cart_object);
+    //   localStorage.setItem('key', JSON.stringify(cart_array));
+    // }
+
+    console.log(localStorage);
+    // localStorage.clear();
+  });
+  let data = JSON.parse(localStorage.getItem('key'));
+  // console.log('localStorage Length', JSON.parse(data.length));
+  $('.cart_number').text(data.length);
+  console.log();
 });
