@@ -104,11 +104,11 @@ $(document).ready(function () {
   }
 
   $('.cart_main_desc_buy_btn').click(function () {
+    $(this).css('pointer-events', 'none');
+
     var quantity = $('#quantity').val(),
       total_price = $('.cart_main_desc_price ').text(),
       product_name = $('.cart_main_desc_title ').text();
-
-    console.log(total_price);
 
     Email.send({
       SecureToken: '11c690b3-7066-4ee8-9ff7-c2e1e0c91e07',
@@ -120,6 +120,11 @@ $(document).ready(function () {
               Code : #${code},
               Quantity : ${quantity},
               Total Price : ${total_price}`,
-    }).then((message) => console.log(message));
+    }).then((message) => {
+      if (message == 'OK') {
+        $(this).css('pointer-events', 'auto');
+        alert('Your Order has been sent successfuly .....');
+      }
+    });
   });
 });
