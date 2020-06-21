@@ -303,9 +303,11 @@
           var like_btn = $('.like_btn');
 
           if(state == 'unlike'){
+            $(this).attr('value','like')
             like_btn.addClass('text-danger');
             like_btn.removeClass('text-muted');
-          }else{
+          }
+          if(state == 'like'){
             like_btn.addClass('text-muted');
             like_btn.removeClass('text-danger');
           }
