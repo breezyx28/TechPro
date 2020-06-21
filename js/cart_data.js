@@ -4,6 +4,11 @@ $(document).ready(function () {
     category = url.searchParams.get('category'),
     code = url.searchParams.get('code');
 
+  if (!category && !code) {
+    alert('Wrong Direction ......');
+    window.location.href = '/shop.html';
+  }
+
   var items = [],
     clo = [],
     elec = '',
@@ -105,18 +110,16 @@ $(document).ready(function () {
 
     console.log(total_price);
 
-    $(this).attr(
-      'href',
-      'mailto:mohamedx.28@gmail.com?subject=Buying&body= Product name : ' +
-        product_name +
-        ', Category : ' +
-        category +
-        ', Product CODE : #' +
-        code +
-        ', Quantity : ' +
-        quantity +
-        ', Total Price :' +
-        total_price,
-    );
+    Email.send({
+      SecureToken: '11c690b3-7066-4ee8-9ff7-c2e1e0c91e07',
+      To: 'mohamedx.28@gmail.com',
+      From: 'web.technicalproffessional@gmail.com',
+      Subject: 'Web Order',
+      Body: `Product Name : ${product_name},
+              Category : ${category},
+              Code : #${code},
+              Quantity : ${quantity},
+              Total Price : ${total_price}`,
+    }).then((message) => console.log(message));
   });
 });
