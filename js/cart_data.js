@@ -13,10 +13,6 @@ $(document).ready(function () {
   $.getJSON('../json/category.json', function (data) {
     $.each(data, function (index, value) {
       items.push(data);
-      // clo.push(value.clothes);
-      // elec = value.Electronics;
-      // furn = value.Furniture;
-      // food = value.food;
     });
   });
 
@@ -24,9 +20,8 @@ $(document).ready(function () {
     setTimeout(function () {
       $.each(items, function (index, value) {
         if (cat == 'clothes') {
-          console.log(value.category.clothes[code]);
           $('.cart_main_desc_title').html(value.category.clothes[code].name);
-          let price = $('.cart_main_desc_price').attr(
+          $('.cart_main_desc_price').attr(
             'value',
             value.category.clothes[code].price,
           );
@@ -39,9 +34,8 @@ $(document).ready(function () {
           );
         }
         if (cat == 'furniture') {
-          console.log(value.category.Furniture[code]);
           $('.cart_main_desc_title').html(value.category.Furniture[code].name);
-          let price = $('.cart_main_desc_price').attr(
+          $('.cart_main_desc_price').attr(
             'value',
             value.category.Furniture[code].price,
           );
@@ -54,11 +48,10 @@ $(document).ready(function () {
           );
         }
         if (cat == 'Electronics') {
-          console.log(value.category.Electronics[code]);
           $('.cart_main_desc_title').html(
             value.category.Electronics[code].name,
           );
-          let price = $('.cart_main_desc_price').attr(
+          $('.cart_main_desc_price').attr(
             'value',
             value.category.Electronics[code].price,
           );
@@ -71,9 +64,8 @@ $(document).ready(function () {
           );
         }
         if (cat == 'food') {
-          console.log(value.category.food[code]);
           $('.cart_main_desc_title').html(value.category.food[code].name);
-          let price = $('.cart_main_desc_price').attr(
+          $('.cart_main_desc_price').attr(
             'value',
             value.category.food[code].price,
           );
@@ -108,8 +100,10 @@ $(document).ready(function () {
 
   $('.cart_main_desc_buy_btn').click(function () {
     var quantity = $('#quantity').val(),
-      total_price = $('.cart_main_desc_price ').attr('value'),
+      total_price = $('.cart_main_desc_price ').text(),
       product_name = $('.cart_main_desc_title ').text();
+
+    console.log(total_price);
 
     $(this).attr(
       'href',
@@ -117,7 +111,7 @@ $(document).ready(function () {
         product_name +
         ', Category : ' +
         category +
-        'Product CODE : #' +
+        ', Product CODE : #' +
         code +
         ', Quantity : ' +
         quantity +
