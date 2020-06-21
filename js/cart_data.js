@@ -115,7 +115,7 @@ $(document).ready(function () {
         code +
         ', Quantity : ' +
         quantity +
-        ', Total Price :$' +
+        ', Total Price :' +
         total_price,
     );
   });

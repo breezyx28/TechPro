@@ -155,7 +155,7 @@
                   class="col-12 col-sm-12 col-md-12 col-lg-3 cart_main_desc_fav_btn text-center border-fade"
                 >
                   <i
-                    class="fa fa-heart text-muted"
+                    class="like_btn fa fa-heart text-muted" value="unlike"
                     style="padding: 0.72rem; width: 100%; cursor: pointer;"
                     aria-hidden="true"
                   ></i>
@@ -295,6 +295,23 @@
     <!-- Optional JavaScript -->
     <script src="lib/jquery-3.5.1.min.js"></script>
     <script src="lib/bootstrap-4.3.1.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".like_btn").click(function(){
+          var state = $(this).attr('value');
+          var like_btn = $('.like_btn');
+
+          if(state == 'unlike'){
+            like_btn.addClass('text-danger');
+            like_btn.removeClass('text-muted');
+          }else{
+            like_btn.addClass('text-muted');
+            like_btn.removeClass('text-danger');
+          }
+        });
+      })
+    </script>
 
     <!-- scroll effect with navbar -->
     <script src="js/nav_scrooler.js"></script>
