@@ -73,7 +73,7 @@
             >
               <a href="#" class="text-dark text-fade">Category</a>
               <img src="img/icons/next (1).png" width="16" height="16" />
-              <a href="#" class="text-dark text-fade">Furniture</a>
+              <a href="#" class="prev_page text-dark text-fade">Furniture</a>
             </div>
             <div
               class="cat_social_media d-flex flex-row justify-content-between align-items-center w-10"
@@ -296,6 +296,8 @@
     <script src="lib/jquery-3.5.1.min.js"></script>
     <script src="lib/bootstrap-4.3.1.min.js"></script>
     <script src="lib/smtp.js"></script>
+
+    <!-- like and unlike script -->
     <script>
       $(document).ready(function(){
         $(".like_btn").click(function(){
@@ -308,6 +310,7 @@
             like_btn.removeClass('text-muted');
           }
           if(state == 'like'){
+            $(this).attr('value','unlike')
             like_btn.addClass('text-muted');
             like_btn.removeClass('text-danger');
           }

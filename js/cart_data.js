@@ -9,6 +9,14 @@ $(document).ready(function () {
     window.location.href = '/shop.html';
   }
 
+  let pages = ['food', 'clothes', 'Electronics', 'furniture'];
+
+  if (pages.includes(category)) {
+    $('.prev_page')
+      .text(category)
+      .attr('href', 'category.html?category=' + category);
+  }
+
   var items = [],
     clo = [],
     elec = '',
@@ -104,6 +112,7 @@ $(document).ready(function () {
   }
 
   $('.cart_main_desc_buy_btn').click(function () {
+    //disable link after request
     $(this).css('pointer-events', 'none');
 
     var quantity = $('#quantity').val(),
@@ -122,6 +131,7 @@ $(document).ready(function () {
               Total Price : ${total_price}`,
     }).then((message) => {
       if (message == 'OK') {
+        //enable link after request is done
         $(this).css('pointer-events', 'auto');
         alert('Your Order has been sent successfuly .....');
       }
