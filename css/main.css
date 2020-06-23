@@ -29,6 +29,9 @@ body::-webkit-scrollbar {
 .bg-matte {
   background-color: #111114 !important;
 }
+.text-matte {
+  color: #111114 !important;
+}
 .text-fade {
   color: rgba(156, 155, 155, 0.741) !important;
 }

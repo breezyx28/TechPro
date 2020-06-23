@@ -2,8 +2,9 @@
 
 .shoping_side {
   position: relative;
-  background-image: url(../img/logo/logo.png);
+  background-image: url(../img/scott-webb-M5PYMJ83OfE-unsplash.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -90,13 +91,13 @@
   visibility: hidden;
   transition: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.most_sell_holder1:hover .item1,
+/* .most_sell_holder1:hover .item1,
 .most_sell_holder2:hover .item2,
 .most_sell_holder3:hover .item3,
 .most_sell_holder4:hover .item4 {
   transition: 0.66s;
   visibility: visible;
-}
+} */
 .most_sell_img_btn button {
   align-self: center;
   padding: 0.5rem;
