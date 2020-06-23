@@ -80,7 +80,7 @@ $(document).ready(function () {
           aria-label="Price + Cart"
         >
           
-            <a href="cart.html?category=${cat}&code=${code}" class="btn btn-outline-secondary btn-sm" style="text-decoration:none;"><b>$${price}</b></a>
+            <a href="#" class="btn btn-outline-secondary btn-sm" style="text-decoration:none;"><b>$${price}</b></a>
          
           <button
             class="cart_btn btn btn-outline-secondary btn-sm text-center" value="${code}"

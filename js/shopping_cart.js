@@ -1,7 +1,8 @@
 $(document).ready(function () {
-  var tr = function (img, name, price, code) {
+  var tr = function (cat, img, name, price, code) {
     let tr = `<tr class="bg-white border-bottom">
                 <td class="align-middle d-flex flex-row align-items-center">
+                <a href="cart.html?category=${cat}&code=${code}" style="text-decoration:none">
                 <img
                     src="${img}"
                     width="80"
@@ -9,6 +10,7 @@ $(document).ready(function () {
                     class="product_img"
                     alt=""
                 />
+                <a>
                 <p class="product_name ml-3">${name}</p>
                 </td>
                 <td class="align-middle text-center"><input
@@ -38,17 +40,17 @@ $(document).ready(function () {
         $.each(local_array, function (index2, value2) {
           if (value1.clothes[value2.code] && value2.category == 'clothes') {
             let a = value1.clothes[value2.code];
-            tr(a.image_url, a.name, a.price, value2.code);
+            tr(value2.category, a.image_url, a.name, a.price, value2.code);
             console.log(value1.clothes[value2.code]);
           }
           if (value1.Furniture[value2.code] && value2.category == 'Furniture') {
             let a = value1.Furniture[value2.code];
-            tr(a.image_url, a.name, a.price, value2.code);
+            tr(value2.category, a.image_url, a.name, a.price, value2.code);
             console.log(value1.Furniture[value2.code]);
           }
           if (value1.food[value2.code] && value2.category == 'food') {
             let a = value1.food[value2.code];
-            tr(a.image_url, a.name, a.price, value2.code);
+            tr(value2.category, a.image_url, a.name, a.price, value2.code);
             console.log(value1.food[value2.code]);
           }
           if (
@@ -56,7 +58,7 @@ $(document).ready(function () {
             value2.category == 'Electronics'
           ) {
             let a = value1.Electronics[value2.code];
-            tr(a.image_url, a.name, a.price, value2.code);
+            tr(value2.category, a.image_url, a.name, a.price, value2.code);
             console.log(value1.Electronics[value2.code]);
           }
         });
