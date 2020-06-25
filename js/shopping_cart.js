@@ -103,7 +103,7 @@ $(document).ready(function () {
       }
     }, 100);
   };
-
+total();
   //changing price onchange ..........
   // .
   // ..
@@ -177,6 +177,7 @@ $(document).ready(function () {
 
       total_product(local.length);
     }
+total();
   });
 
   //function for CHECKOUT
