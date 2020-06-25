@@ -107,7 +107,7 @@
         class="total_price border p-3 d-flex flex-row justify-content-around align-items-center"
       >
         <small class="text-dark pr-4">Total Price</small>
-        <b>$110</b>
+        <b>$</b><b id="total_price">110</b>
       </div>
     </div>
     <!-- End Total -->
@@ -117,7 +117,13 @@
       class="d-flex flex-row justify-content-center align-items-center text-center text-white mt-4 mb-4"
       style="font-weight: 300;"
     >
-      <div class="bg-matte p-2 w-50">CHECKOUT</div>
+      <div
+        class="bg-matte p-2 w-50"
+        style="cursor: pointer;"
+        id="final_checkout"
+      >
+        CHECKOUT
+      </div>
     </div>
     <!-- END CHECKOUT BUTTON -->
 

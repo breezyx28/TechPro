@@ -29,7 +29,7 @@ $(document).ready(function () {
                     x
                 </div></td>
                 <td class="align-middle"> <div class="price text-dark text-center">
-                    <b class="single_price">${price}</b></td>
+                    <b>$</b><b class="single_price" value="${price}">${price}</b></td>
             </tr>`;
     $('.shopping_cart_table_rows').append(tr);
   };
@@ -90,40 +90,53 @@ $(document).ready(function () {
       $(document).on('change', '.total_quantity', function () {
         $(this).text(shop_quan);
       });
+
+      ////////////////////////////////////
+      var shop_price = 0;
+      var price_len = document.getElementsByClassName('single_price').length;
+      var price = document.getElementsByClassName('single_price');
+      var tot_pri = document.getElementById('total_price');
+
+      for (let p = 0; p < price_len; p++) {
+        shop_price += parseInt(price.item(p).innerHTML);
+        $('#total_price').text(shop_price);
+      }
     }, 100);
   };
 
-  //changing quantity onchange ..........
+  //changing price onchange ..........
+  // .
+  // ..
+  // ...
+  // ....
   $(document).on('change', '.shopping_quantity', function () {
     var val = $(this).val();
     var par = $(this).parent().parent();
-    console.log(par);
+
+    //get price of element onchange and turn it to array
     var single_price = $(par[0])
       .map(function () {
-        return $('td > .price > .single_price', this).text();
+        return $('td > .price > .single_price', this).attr('value');
       })
       .toArray();
 
+    //getting the above value and multiply it by price
     var d = $(par[0]).map(function () {
       return $('td > .price > .single_price', this).text(
-        '$' + val * parseInt(single_price[0]),
+        val * parseInt(single_price[0]),
       );
     });
 
-    console.log(single_price);
-
-    console.log(par[0]);
-
-    console.log(single_price);
-
-    // $('' + par[0] + '> tr > .price .price_single').text(
-    //   val * parseInt(single_price),
-    // );
+    //refresh the price value on every change event
     total();
   });
   total();
 
   //removing elemenet from cart
+  // .
+  // ..
+  // ...
+  // ....
   $(document).on('click', '.remove ', function () {
     var delete_code = $(this).attr('value1'),
       delete_cat = $(this).attr('value2'),
@@ -164,5 +177,65 @@ $(document).ready(function () {
 
       total_product(local.length);
     }
+  });
+
+  //function for CHECKOUT
+  var hey = '';
+  var chceckout = function () {
+    let all = document.querySelectorAll('.shopping_cart_table_rows > tr')
+      .length;
+
+    let product_name = document.getElementsByClassName('product_name ');
+
+    let shopping_quantity = document.getElementsByClassName(
+      'shopping_quantity',
+    );
+
+    let single_price = document.getElementsByClassName('single_price ');
+    var bag = '';
+    for (let a = 0; a < all; a++) {
+      var products_names = $(product_name[a]).text();
+      var shopping_quantities = $(shopping_quantity[a]).val();
+      var multi_price = $(single_price[a]).text();
+
+      bag += `Product No ${a + 1} :-
+              Product Name : ${products_names},
+              Product Quantity : ${shopping_quantities},
+              Product Price : ${multi_price}
+                     <------------------ Next Order ----------------->
+        `;
+    }
+    console.log(bag.toString());
+    return bag.toString();
+  };
+
+  //CHECK PROCESS
+  // .
+  // ..
+  // ....
+  // ....
+  $('#final_checkout').click(function () {
+    //disable link after request
+    $(this).css('pointer-events', 'none');
+
+    setTimeout(
+      function () {
+        Email.send({
+          SecureToken: '11c690b3-7066-4ee8-9ff7-c2e1e0c91e07',
+          To: 'mohamedx.28@gmail.com',
+          From: 'web.technicalproffessional@gmail.com',
+          Subject: 'Multi Orders',
+          Body: chceckout(),
+        }).then((message) => {
+          if (message == 'OK') {
+            //enable link after request is done
+            $(this).css('pointer-events', 'auto');
+            localStorage.clear();
+            alert('your cart elements has been send Successfuly ....');
+          }
+        });
+      }.bind(this),
+      200,
+    );
   });
 });
