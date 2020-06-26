@@ -101,9 +101,17 @@ $(document).ready(function () {
         shop_price += parseInt(price.item(p).innerHTML);
         $('#total_price').text(shop_price);
       }
+
+      //changing total quantity onchange ..........
+      $(document).on('change', '.remove', function () {
+        $(this).text(shop_quan);
+        $(this).text(shop_price);
+      });
     }, 100);
   };
-total();
+
+  total();
+
   //changing price onchange ..........
   // .
   // ..
@@ -130,7 +138,6 @@ total();
     //refresh the price value on every change event
     total();
   });
-  total();
 
   //removing elemenet from cart
   // .
@@ -145,7 +152,8 @@ total();
     console.log(local);
 
     if (
-      confirm('Do You Realy want to remove this item form the basket >') == true
+      confirm('Do You Realy want to remove this item form the basket .... ?') ==
+      true
     ) {
       //getting index of clicked element to remove from localStorage array
       let index = local.findIndex(
@@ -166,8 +174,10 @@ total();
       localStorage.setItem('key', str);
       console.log(localStorage);
 
+      total();
+
       //hide effect after deleting
-      $(this).parent().parent().hide('slow');
+      $(this).parent().parent().hide('slow').remove();
 
       console.log(local.length);
 
@@ -177,7 +187,6 @@ total();
 
       total_product(local.length);
     }
-total();
   });
 
   //function for CHECKOUT
@@ -239,4 +248,6 @@ total();
       200,
     );
   });
+
+  total();
 });
