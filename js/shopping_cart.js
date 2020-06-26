@@ -102,6 +102,15 @@ $(document).ready(function () {
         $('#total_price').text(shop_price);
       }
 
+      console.log(
+        'shop quantity : ',
+        shop_quan,
+        ' price length : ',
+        price_len,
+        ' shop price',
+        shop_price,
+      );
+
       //changing total quantity onchange ..........
       $(document).on('change', '.remove', function () {
         $(this).text(shop_quan);
@@ -110,7 +119,10 @@ $(document).ready(function () {
     }, 100);
   };
 
-  total();
+  setTimeout(() => {
+    total();
+  }, 100);
+  // total();
 
   //changing price onchange ..........
   // .
