@@ -102,11 +102,6 @@ $(document).ready(function () {
         $('#total_price').text(shop_price);
       }
 
-      //changing total quantity onchange ..........
-      $(document).on('change', '.remove', function () {
-        $(this).text(shop_quan);
-        $(this).text(shop_price);
-      });
     }, 100);
   };
 
@@ -138,6 +133,8 @@ $(document).ready(function () {
     //refresh the price value on every change event
     total();
   });
+
+    total();
 
   //removing elemenet from cart
   // .
@@ -174,7 +171,7 @@ $(document).ready(function () {
       localStorage.setItem('key', str);
       console.log(localStorage);
 
-      total();
+    
 
       //hide effect after deleting
       $(this).parent().parent().hide('slow').remove();
@@ -241,6 +238,7 @@ $(document).ready(function () {
             //enable link after request is done
             $(this).css('pointer-events', 'auto');
             localStorage.clear();
+            $("tbody").fadeOut().empty();
             alert('your cart elements has been send Successfuly ....');
           }
         });
