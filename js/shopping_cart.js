@@ -252,6 +252,7 @@ $(document).ready(function () {
             //enable link after request is done
             $(this).css('pointer-events', 'auto');
             localStorage.clear();
+            window.location.reload();
             alert('your cart elements has been send Successfuly ....');
           }
         });
