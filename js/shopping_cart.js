@@ -102,7 +102,6 @@ $(document).ready(function () {
         $('#total_price').text(shop_price);
       }
 
-<<<<<<< HEAD
       console.log(
         'shop quantity : ',
         shop_quan,
@@ -117,21 +116,12 @@ $(document).ready(function () {
         $(this).text(shop_quan);
         $(this).text(shop_price);
       });
-||||||| merged common ancestors
-      //changing total quantity onchange ..........
-      $(document).on('change', '.remove', function () {
-        $(this).text(shop_quan);
-        $(this).text(shop_price);
-      });
-=======
->>>>>>> 16ac3b1d0eef30b65d238dc026eeb5cb583d4caa
     }, 100);
   };
 
   setTimeout(() => {
     total();
   }, 100);
-  // total();
 
   //changing price onchange ..........
   // .
@@ -159,8 +149,6 @@ $(document).ready(function () {
     //refresh the price value on every change event
     total();
   });
-
-    total();
 
   //removing elemenet from cart
   // .
@@ -197,7 +185,7 @@ $(document).ready(function () {
       localStorage.setItem('key', str);
       console.log(localStorage);
 
-    
+      total();
 
       //hide effect after deleting
       $(this).parent().parent().hide('slow').remove();
@@ -264,7 +252,6 @@ $(document).ready(function () {
             //enable link after request is done
             $(this).css('pointer-events', 'auto');
             localStorage.clear();
-            $("tbody").fadeOut().empty();
             alert('your cart elements has been send Successfuly ....');
           }
         });
