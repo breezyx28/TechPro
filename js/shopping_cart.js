@@ -47,8 +47,10 @@ $(document).ready(function () {
             let a = value1.clothes[value2.code];
             tr(value2.category, a.image_url, a.name, a.price, value2.code);
           }
-          if (value1.Furniture[value2.code] && value2.category == 'Furniture') {
+          if (value1.Furniture[value2.code] && value2.category == 'furniture') {
             let a = value1.Furniture[value2.code];
+            console.log(a);
+
             tr(value2.category, a.image_url, a.name, a.price, value2.code);
           }
           if (value1.food[value2.code] && value2.category == 'food') {
@@ -98,7 +100,7 @@ $(document).ready(function () {
       var tot_pri = document.getElementById('total_price');
 
       for (let p = 0; p < price_len; p++) {
-        shop_price += parseInt(price.item(p).innerHTML);
+        shop_price += parseFloat(price.item(p).innerHTML);
         $('#total_price').text(shop_price);
       }
 
@@ -142,13 +144,32 @@ $(document).ready(function () {
     //getting the above value and multiply it by price
     var d = $(par[0]).map(function () {
       return $('td > .price > .single_price', this).text(
-        val * parseInt(single_price[0]),
+        val * parseFloat(single_price[0]),
       );
     });
 
     //refresh the price value on every change event
     total();
   });
+
+  ///////////////////////////
+
+  var local_check = localStorage.getItem('key');
+  console.log(local_check);
+
+  //Stoping Buttons from process when localStorage "key" is Empty
+  var block_btn = function (a) {
+    console.log(a);
+    if (a == null || a == '[]') {
+      $('#final_checkout').removeClass('bg-matte');
+      $('#final_checkout').addClass('bg-secondary');
+      $('#final_checkout').css('pointer-events', 'none');
+      /////////////////////////////////////////////////////////////
+      $('.remove_all').removeClass('bg-danger');
+      $('.remove_all').addClass('bg-secondary');
+      $('.remove_all').css('pointer-events', 'none');
+    }
+  };
 
   //removing elemenet from cart
   // .
@@ -188,7 +209,7 @@ $(document).ready(function () {
       total();
 
       //hide effect after deleting
-      $(this).parent().parent().hide('slow').remove();
+      $(this).parent().parent().fadeOut('slow').remove();
 
       console.log(local.length);
 
@@ -197,8 +218,27 @@ $(document).ready(function () {
       }
 
       total_product(local.length);
+      block_btn(local_check);
     }
   });
+
+  //remove all
+  if (local_check != null) {
+    $('.remove_all').click(function () {
+      if (
+        confirm(
+          'Do You Realy want to remove all these items form the basket .... ?',
+        ) == true
+      ) {
+        //hide effect after deleting
+        $('tbody > tr').fadeOut('slow').empty();
+
+        localStorage.removeItem('key');
+
+        window.location.reload();
+      }
+    });
+  }
 
   //function for CHECKOUT
   var hey = '';
@@ -235,31 +275,48 @@ $(document).ready(function () {
   // ..
   // ....
   // ....
-  $('#final_checkout').click(function () {
-    //disable link after request
-    $(this).css('pointer-events', 'none');
+  // Check localStorage is empty or not
+  // if (local_check == null) {
+  //   $('#final_checkout').removeClass('bg-matte');
+  //   $('#final_checkout').addClass('bg-secondary');
+  //   $('#final_checkout').css('pointer-events', 'none');
+  // }
 
-    setTimeout(
-      function () {
-        Email.send({
-          SecureToken: '11c690b3-7066-4ee8-9ff7-c2e1e0c91e07',
-          To: 'mohamedx.28@gmail.com',
-          From: 'web.technicalproffessional@gmail.com',
-          Subject: 'Multi Orders',
-          Body: chceckout(),
-        }).then((message) => {
-          if (message == 'OK') {
-            //enable link after request is done
-            $(this).css('pointer-events', 'auto');
-            localStorage.clear();
-            window.location.reload();
-            alert('your cart elements has been send Successfuly ....');
-          }
-        });
-      }.bind(this),
-      200,
-    );
+  // Click Event
+  //.
+  //..
+  $('#final_checkout').click(function () {
+    if (local_check == null) {
+      alert('the cart is empty can not make this process ');
+    } else {
+      //disable link after request
+      $(this).css('pointer-events', 'none');
+
+      setTimeout(
+        function () {
+          Email.send({
+            SecureToken: '11c690b3-7066-4ee8-9ff7-c2e1e0c91e07',
+            To: 'mohamedx.28@gmail.com',
+            From: 'web.technicalproffessional@gmail.com',
+            Subject: 'Multi Orders',
+            Body: chceckout(),
+          }).then((message) => {
+            if (message == 'OK') {
+              //enable link after request is done
+              $(this).css('pointer-events', 'auto');
+              localStorage.clear();
+              block_btn(local_check);
+              window.location.reload();
+              alert('your cart elements has been send Successfuly ....');
+            }
+          });
+        }.bind(this),
+        200,
+      );
+    }
   });
 
   total();
+
+  block_btn(local_check);
 });
