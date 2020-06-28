@@ -46,8 +46,8 @@ $(document).ready(function () {
       <div
         class="cat_product_image_icons d-flex justify-content-between text-muted"
       >
-        <i class="fa fa-list-ul mr-2" aria-hidden="true"></i>
-        <i class="like_btn fa fa-heart" style="cursor:pointer;" hash="${code}-${cat}" aria-hidden="true"></i>
+        <i class="product_info fa fa-exclamation-circle mr-2" aria-hidden="true" style="cursor:pointer;"></i>
+        <i class="like_btn fa fa-heart" hash="${code}-${cat}" aria-hidden="true"></i>
       </div>
     </div>
     <div

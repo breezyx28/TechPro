@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="lib/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/fontawesome-free/css/all.css" />
-    <link rel="stylesheet" href="css/loader.css" />
+    <!-- <link rel="stylesheet" href="css/loader.css" /> -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/cat.css" />
 
@@ -119,28 +119,25 @@
         </div>
 
         <div
-          class="w-100 d-flex flex-row bg-white shadow-sm justify-content-around text-muted align-items-center"
+          class="w-75 position-relative d-flex flex-row bg-white justify-content-around text-muted align-items-center"
+          style="height: 7vh; transform: translateX(15%);"
         >
-          <div class="cat_title_types d-inline">
-            <div class="text-muted d-inline small-12">ALL TYPES</div>
-            <select name="" id="types" class="d-inline text-muted border-0">
-            </select>
-          </div>
-          <div
-            class="cat_title_type_nav w-50 d-flex flex-row justify-content-center"
-          >
-            <div class="col-4 small-12">popular products</div>
-            <div class="col-4 small-12">low price</div>
-            <div class="col-4 small-12">hight price</div>
-          </div>
-          <div class="cat_title_price_dropdown d-inline small-12">
-            <div class="text-muted d-inline">PRICE</div>
-            <select name="" id="" class="d-inline text-muted border-0">
-              <option value=""></option>
-              <option value="">fdg</option>
-              <option value="">sdf</option>
-              <option value="">sdf</option>
-            </select>
+          <div class="input-group shadow-sm rounded p-2">
+            <div class="input-group-prepend">
+              <div
+                class="input-group-text bg-white border-0"
+                id="btnGroupAddon"
+              >
+                <i class="fa fa-search text-muted" aria-hidden="true"></i>
+              </div>
+            </div>
+            <input
+              type="text"
+              class="form-control border-0"
+              placeholder="Search"
+              aria-label="Input group example"
+              aria-describedby="btnGroupAddon"
+            />
           </div>
         </div>
 
