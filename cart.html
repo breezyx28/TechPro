@@ -116,7 +116,7 @@
                   beatae eos, expedita alias molestias, odio quidem.
                   Exercitationem?
                 </div>
-                <div class="cart_main_desc_price h3" style="font-size: 8vw;color: #37c358 ;font-weight: 400;" value="25.00"></div>
+                <div class="cart_main_desc_price h3" style="font-size: 8vw;color: #6ce2ac ;font-weight: 400;" value="25.00"></div>
               </div>
               <div
                 class="cart_main_desc_call_to_action d-flex flex-lg-row flex-column justify-content-between align-items-center h-25"
@@ -141,7 +141,7 @@
                   />
                 </div>
                 <a href="#"
-                  class="col-12 col-sm-12 col-md-12 col-lg-5 cart_main_desc_buy_btn p-2 m-3 bg-matte text-white"
+                  class="col-12 col-sm-12 col-md-12 col-lg-5 cart_main_desc_buy_btn p-2 m-3 bg-primary text-white"
                 >
                   <div
                     class="d-flex flex-row justify-content-around align-items-center"
@@ -297,26 +297,7 @@
     <script src="lib/bootstrap-4.3.1.min.js"></script>
     <script src="lib/smtp.js"></script>
 
-    <!-- like and unlike script -->
-    <script>
-      $(document).ready(function(){
-        $(".like_btn").click(function(){
-          var state = $(this).attr('value');
-          var like_btn = $('.like_btn');
-
-          if(state == 'unlike'){
-            $(this).attr('value','like')
-            like_btn.addClass('text-danger');
-            like_btn.removeClass('text-muted');
-          }
-          if(state == 'like'){
-            $(this).attr('value','unlike')
-            like_btn.addClass('text-muted');
-            like_btn.removeClass('text-danger');
-          }
-        });
-      })
-    </script>
+    <script src="js/like.js"></script>
 
     <!-- scroll effect with navbar -->
     <script src="js/nav_scrooler.js"></script>

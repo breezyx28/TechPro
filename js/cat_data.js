@@ -47,7 +47,7 @@ $(document).ready(function () {
         class="cat_product_image_icons d-flex justify-content-between text-muted"
       >
         <i class="fa fa-list-ul mr-2" aria-hidden="true"></i>
-        <i class="fa fa-heart" aria-hidden="true"></i>
+        <i class="like_btn fa fa-heart" style="cursor:pointer;" hash="${code}-${cat}" aria-hidden="true"></i>
       </div>
     </div>
     <div

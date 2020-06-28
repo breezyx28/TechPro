@@ -270,18 +270,6 @@ $(document).ready(function () {
     return bag.toString();
   };
 
-  //CHECK PROCESS
-  // .
-  // ..
-  // ....
-  // ....
-  // Check localStorage is empty or not
-  // if (local_check == null) {
-  //   $('#final_checkout').removeClass('bg-matte');
-  //   $('#final_checkout').addClass('bg-secondary');
-  //   $('#final_checkout').css('pointer-events', 'none');
-  // }
-
   // Click Event
   //.
   //..
