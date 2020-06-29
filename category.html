@@ -122,7 +122,9 @@
           class="w-75 position-relative d-flex flex-row bg-white justify-content-around text-muted align-items-center"
           style="height: 7vh; transform: translateX(15%);"
         >
-          <div class="input-group shadow-sm rounded p-2">
+          <div
+            class="input-group shadow-sm rounded p-2 border-primary border-right border-left"
+          >
             <div class="input-group-prepend">
               <div
                 class="input-group-text bg-white border-0"
@@ -133,11 +135,18 @@
             </div>
             <input
               type="text"
+              id="search"
               class="form-control border-0"
               placeholder="Search"
               aria-label="Input group example"
               aria-describedby="btnGroupAddon"
             />
+            <div class="d-flex align-items-center">Search By</div>
+            <select id="search_dropdown" class="bg-white border-0 text-center">
+              <option value="" disabled selected></option>
+              <option value="">Title</option>
+              <option value="">Tag</option>
+            </select>
           </div>
         </div>
 
@@ -318,6 +327,8 @@
     <!-- data -->
     <script src="js/cat_data.js"></script>
     <script src="js/cat_likes.js"></script>
+    <script src="js/cat_search.js"></script>
+
     <!-- scroll effect with navbar -->
     <script src="js/nav_scrooler.js"></script>
     <script src="js/loader.js"></script>

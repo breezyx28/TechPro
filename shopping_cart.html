@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="lib/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/fontawesome-free/css/all.css" />
-    <link rel="stylesheet" href="css/loader.css" />
+    <!-- <link rel="stylesheet" href="css/loader.css" /> -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/shopping_cart.css" />
   </head>
@@ -73,6 +73,9 @@
     <!-- SHOPPING CART  -->
     <div class="big_head display-4 text-center pt-5 mt-2 pb-4">
       My Shopping Cart
+    </div>
+    <div class="back_to btn btn-light border ml-5">
+      <img src="img/icons/back.png" width="16" height="16" onclick="goBack()" />
     </div>
     <div class="table-responsive container pt-5">
       <table class="table table-striped bg-white border-top-0">
@@ -270,6 +273,12 @@
     <!-- JS FILES -->
     <script src="lib/jquery-3.5.1.min.js"></script>
     <script src="lib/bootstrap-4.3.1.min.js"></script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
 
     <!-- Email lib -->
     <script src="lib/smtp.js"></script>

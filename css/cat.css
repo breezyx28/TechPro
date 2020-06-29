@@ -36,6 +36,15 @@
 /* end top nav */
 
 /* ////////////////////////////////////// */
+
+/* page holder */
+#search_dropdown {
+  appearance: none;
+}
+#search_dropdown:focus {
+  outline: none;
+}
+/* end page holder */
 /* category navbar */
 .cat_title_type_nav .col-4 {
   text-align: center;

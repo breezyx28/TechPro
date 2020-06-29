@@ -216,16 +216,18 @@ $(document).ready(function () {
     cart_object.code = code;
     cart_object.category = url_params;
 
-    var length_storage = localStorage.length;
-    console.log(localStorage);
+    var length_storage = localStorage.getItem('key');
+    console.log(length_storage);
 
-    if (length_storage < 1) {
+    if (length_storage == null || localStorage.length < 1) {
       cart_array.push(cart_object);
       localStorage.setItem('key', JSON.stringify(cart_array));
       let data = JSON.parse(localStorage.getItem('key'));
       $('.cart_number').text(data.length);
     } else {
       let test_data = JSON.parse(localStorage.getItem('key'));
+      console.log(localStorage.getItem('key'));
+
       let local_exists = test_data.find(
         (elem) => elem.code == code && elem.category == url_params,
       );
