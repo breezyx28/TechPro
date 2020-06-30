@@ -96,27 +96,50 @@ $(document).ready(function () {
 
   $('#search').on('keyup', function () {
     var search = this.value;
-    console.log(this.value);
+    var option = $('#search_dropdown').val();
 
-    console.log(items);
-    console.log(search);
+    if (option == 'tag') {
+      if (search != '') {
+        $('#category_contents').empty();
+        $('.load_more').hide('fast');
+        $.each(category_check(), function (index, value) {
+          if ($.inArray(search, value.key_word) != -1) {
+            console.log(value);
 
-    if (search != '') {
-      $('#category_contents').empty();
-      $.each(category_check(), function (index, value) {
-        if ($.inArray(search, value.key_word) != -1) {
-          console.log(value);
+            contents(
+              index,
+              url_params,
+              value.image_url,
+              value.name,
+              value.price,
+              value.rate,
+            );
+          }
+        });
+      } else {
+        window.location.reload();
+      }
+    } else if (option == 'title') {
+      if (search != '') {
+        $('#category_contents').empty();
+        $('.load_more').hide('fast');
+        $.each(category_check(), function (index, value) {
+          if (value.name.search(search) != -1) {
+            console.log(value);
 
-          contents(
-            index,
-            url_params,
-            value.image_url,
-            value.name,
-            value.price,
-            value.rate,
-          );
-        }
-      });
+            contents(
+              index,
+              url_params,
+              value.image_url,
+              value.name,
+              value.price,
+              value.rate,
+            );
+          }
+        });
+      } else {
+        window.location.reload();
+      }
     } else {
       window.location.reload();
     }
