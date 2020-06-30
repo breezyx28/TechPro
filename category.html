@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="lib/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/fontawesome-free/css/all.css" />
     <!-- <link rel="stylesheet" href="css/loader.css" /> -->
+    <link rel="stylesheet" href="css/clock.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/cat.css" />
 
@@ -78,9 +79,13 @@
             <div
               class="d-flex align-items-center justify-content-around text-muted w-30"
             >
-              <a href="#" class="text-dark text-fade">Category</a>
-              <img src="img/icons/next (1).png" width="16" height="16" />
-              <a href="#" class="text-dark text-fade">Furniture</a>
+              <i class="fa fa-clock fa-2x text-primary" aria-hidden="true"></i>
+              <div id="clockdate">
+                <div class="clockdate-wrapper">
+                  <div id="clock"></div>
+                  <div id="date"></div>
+                </div>
+              </div>
             </div>
             <div
               class="cat_social_media d-flex flex-row justify-content-between align-items-center w-10"
@@ -301,6 +306,9 @@
     <script src="lib/jquery-3.5.1.min.js"></script>
     <script src="lib/bootstrap-4.3.1.min.js"></script>
 
+    <!-- Digital clock With 12 Format -->
+    <script src="js/clock.js"></script>
+
     <!-- Changing Title -->
     <script>
       var currentlocation = window.location.href;
@@ -325,6 +333,7 @@
     </script>
 
     <!-- data -->
+
     <script src="js/cat_data.js"></script>
     <script src="js/cat_likes.js"></script>
     <script src="js/cat_search.js"></script>
