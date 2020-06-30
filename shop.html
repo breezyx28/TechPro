@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>TechPro | Shopping Sction</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=yes"
     />
+    <link rel="icon" sizes="32x32" type="image/x-icon" href="img/logo/full_2.png">
     <link rel="stylesheet" href="lib/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/fontawesome-free/css/all.css" />
-    <link rel="stylesheet" href="css/loader.css" />
+    <!-- <link rel="stylesheet" href="css/loader.css" /> -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/shop.css" />
 
@@ -68,59 +69,57 @@
 
     <!-- CATALOG FIRST BAR SLIDER -->
     <section class="catalog_sec">
-      <div class="display-4 text-center cat_head_line mb-4 mt-5">CATALOG</div>
+      <!-- <div class="display-4 text-center cat_head_line mb-4 mt-5">CATALOG</div> -->
       <br />
       <div class="center row d-flex justify-content-around">
         <div class="col-md-3 col-sm-12 col-lg-3 col-xl-3">
           <a href="category.html?category=Electronics"> <div class="cat_img1">
             <div class="cat_header">
-              <div class="h3 text-dark">Electronics</div>
+              <div class="h3 text-white rounded p-1 bg-primary">Electronics</div>
             </div>
-            <img src="img/products/Electronics/cover.jpg" alt="" />
+            <img src="img/icons/electronics.png" alt="" />
           </div> </a>
           
         </div>
         <div class="col-md-3 col-sm-12 col-lg-3 col-xl-3">
           <a href="category.html?category=clothes">
-            <div class="cat_header"><div class="h3 text-dark">Clothes</div></div>
+            <div class="cat_header"><div class="h3 text-white bg-primary p-1">Clothes</div></div>
           <div class="cat_img2">
-            <img src="img/products/clothes/cover.jpg" alt="" />
+            <img src="img/icons/clothes.png" alt="" />
           </div>
           </a>
         </div>
         <div class="col-md-3 col-sm-12 col-lg-3 col-xl-3">
           <a href="category.html?category=food">
-            <div class="cat_header"><div class="h3 text-white">Food</div></div>
+            <div class="cat_header"><div class="h3 text-white bg-primary p-1">Food</div></div>
           <div class="cat_img3">
-            <img src="img/products/Food/cover.jpg" alt="" />
+            <img src="img/icons/shelf.png" alt="food" />
           </div>
           </a>
         </div>
         <div class="col-md-3 col-sm-12 col-lg-3 col-xl-3">
           <a href="category.html?category=furniture">
-            <div class="cat_header"><div class="h3 text-dark">Furnitures</div></div>
+            <div class="cat_header"><div class="h3 text-white bg-primary p-1">Furnitures</div></div>
           <div class="cat_img4">
-            <img src="img/products/Furnitures/cover1.jpg" alt="" />
+            <img src="img/icons/furniture.png" alt="" />
           </div>
           </a>
         </div>
       </div>
       <br />
       <div class="container cat_sub_header mt-4 pt-4">
-        <h1 class="bg-black text-center">
-          Lorem, ipsum.
+        <h1 class="bg-black text-center" style="text-transform: uppercase;">
+          Our humble list
         </h1>
         <center>
           <small class="text-muted"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sed
-            eligendi officiis quaerat ratione?</small
+            >All necessary household items are here .... choose now</small
           >
         </center>
       </div>
     </section>
     <!-- END OF CATALOG FIRST BAR SLIDER -->
 
-    <hr />
 
     <!-- MOST SELL -->
     <section class="most_sell">
@@ -141,7 +140,7 @@
             <div class="most_sell_wrapper row h-100 position-relative">
               <div class="col-6">
                 <div class="position-relative most_sell_holder1 w-100 h-100">
-                  <img src="img/products/pr1.jpg" />
+                  <a href="cart.html?category=Electronics&code=3"><img src="img/products/Electronics/smart_screen2.jpg" /></a>
                   <div class="most_sell_img_btn item1">
                     <button class="bg-white shadow-sm">
                       <i class="fa fa-search" aria-hidden="true"></i>
@@ -161,17 +160,17 @@
                     class="d-flex position-relative flex-column justiify-content-center align-items-center most_sell_pricing"
                   >
                     <div class="most_sell_discription h4">
-                      Cotton Shirt
+                      Smart Screen
                     </div>
                     <div class="most_sell_pricing">
-                      <h6 class="text-dark text-muted">$11</h6>
+                      <h6 class="text-success">$1000</h6>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-6">
                 <div class="position-relative most_sell_holder2 w-100 h-100">
-                  <img src="img/products/pr2.jpg" />
+                 <a href="cart.html?category=food&code=4"><img src="img/products/Food/nutella.jpg" /></a> 
                   <div class="most_sell_img_btn item2">
                     <button class="bg-white shadow-sm">
                       <i class="fa fa-search" aria-hidden="true"></i>
@@ -190,10 +189,10 @@
                     class="d-flex position-relative flex-column justiify-content-center align-items-center most_sell_pricing"
                   >
                     <div class="most_sell_discription h4">
-                      Cotton Shirt
+                      Nutella
                     </div>
                     <div class="most_sell_pricing">
-                      <h6 class="text-dark text-muted">$11</h6>
+                      <h6 class="text-success">$25</h6>
                     </div>
                   </div>
                 </div>
@@ -201,7 +200,7 @@
               <div class="w-100 d-none"></div>
               <div class="col-6">
                 <div class="position-relative most_sell_holder3 w-100 h-100">
-                  <img src="img/products/pr-3.jpg" />
+                  <a href="cart.html?category=clothes&code=11"><img src="img/products/clothes/shoe3.jpg" /></a>
                   <div class="most_sell_img_btn item3">
                     <button class="bg-white shadow-sm">
                       <i class="fa fa-search" aria-hidden="true"></i>
@@ -220,19 +219,19 @@
                     class="d-flex position-relative flex-column justiify-content-center align-items-center most_sell_pricing"
                   >
                     <div class="most_sell_discription h4">
-                      Cotton Shirt
+                      Nike Red Shoe
                     </div>
                     <div class="most_sell_pricing">
-                      <h6 class="text-dark text-muted">$11</h6>
+                      <h6 class="text-success">$400</h6>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-6">
                 <div class="position-relative most_sell_holder4 w-100 h-100">
-                  <img
-                    src="img/products/Vachetta_Sahara_Duffel_Bag_f192f146-f7a0-4d4e-a453-89fa116f9cd0_600x.jpg"
-                  />
+                  <a href="cart.html?category=furniture&code=1"><img
+                    src="img/products/Furnitures/90d6d8b35dbe78484d7078e93255ba10.jpg"
+                  /></a>
                   <div class="most_sell_img_btn item4">
                     <button class="bg-white shadow-sm">
                       <i class="fa fa-search" aria-hidden="true"></i>
@@ -251,10 +250,10 @@
                     class="d-flex position-relative flex-column justiify-content-center align-items-center most_sell_pricing"
                   >
                     <div class="most_sell_discription h4">
-                      Cotton Shirt
+                      Black Shelf
                     </div>
                     <div class="most_sell_pricing">
-                      <h6 class="text-dark text-muted">$11</h6>
+                      <h6 class="text-success">$400</h6>
                     </div>
                   </div>
                 </div>
@@ -265,9 +264,9 @@
             class="col-lg-6 col-md-12 col-sm-12 order-first order-sm-first order-md-first order-lg-last h-100"
           >
             <img
-              src="img/products/prr.jpg"
+              src="img/products/welcome_1.jpg"
               style="
-                object-fit: contain;
+                background-size: contain;
                 width: 100%;
                 height: 100%;
                 position: relative;
@@ -292,7 +291,7 @@
           </a>
         </div>
         <div class="middle_screen_holder">
-          <img src="img/products/Walking-purple-wall.jpg" alt="" />
+          <img src="img/products/Walking-green-wall.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -427,6 +426,19 @@
    
     <script src="lib/bootstrap-4.3.1.min.js"></script>
 
+    <!-- changing walk cover image -->
+    <script>
+      $(document).ready(function(){
+        $(".middle_screen_btn").hover(function(){
+          $(".middle_screen_holder > img").attr('src','img/products/Walking-purple-wall.jpg');
+        },function(){
+          $(".middle_screen_holder > img").attr('src','img/products/Walking-green-wall.jpg');
+        })
+
+        
+      })
+    </script>
+
     <!-- slick carousel library -->
     <script
       type="text/javascript"
@@ -454,7 +466,7 @@
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 1.01,
+                slidesToShow: 1.15,
               },
             },
           ],
