@@ -114,7 +114,9 @@
 .most_sell_pricing h6 {
   color: #31d4ae !important;
 }
-
+.most_sell_discription {
+  font-size: 1em;
+}
 /* end of most sell */
 
 /* middle screen */
