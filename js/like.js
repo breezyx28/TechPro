@@ -4,6 +4,8 @@ $(document).ready(function () {
   var url_cat = url.searchParams.get('category');
   var url_code = url.searchParams.get('code');
 
+  console.log(localStorage.getItem('liked_elements'));
+
   //test localStorage liked_elements
   var local =
     localStorage.getItem('liked_elements') != null
@@ -13,6 +15,7 @@ $(document).ready(function () {
   //Check for element if exists in localStorage array
   var check = function (cat, code, loc) {
     let arr = loc;
+
     if (arr.length < 1) {
       console.log(arr);
 
@@ -27,9 +30,9 @@ $(document).ready(function () {
 
     //test if exists or not
     if (check == -1) {
-      return true;
-    } else {
       return false;
+    } else {
+      return true;
     }
   };
 
@@ -42,7 +45,7 @@ $(document).ready(function () {
       like_btn.addClass('text-danger');
       like_btn.removeClass('text-muted');
 
-      if (check(url_cat, url_code, local) == true) {
+      if (check(url_cat, url_code, local) == false) {
         local.push({ category: url_cat, code: parseInt(url_code) });
 
         //turn elm variable to String
@@ -53,11 +56,12 @@ $(document).ready(function () {
       }
     }
     if (state == 'like') {
+      alert('like');
       $(this).attr('value', 'unlike');
       like_btn.addClass('text-muted');
       like_btn.removeClass('text-danger');
 
-      if (check(url_cat, url_code, local) == false) {
+      if (check(url_cat, url_code, local) == true) {
         let objs = { category: url_cat, code: parseInt(url_code) };
 
         let index = local.findIndex(
@@ -71,24 +75,26 @@ $(document).ready(function () {
     }
   });
 
-  var c = JSON.parse(localStorage.getItem('liked_elements'));
+  if (localStorage.getItem('liked_elements') != null) {
+    var c = JSON.parse(localStorage.getItem('liked_elements'));
 
-  let obj = { category: url_cat, code: parseInt(url_code) };
+    let obj = { category: url_cat, code: parseInt(url_code) };
 
-  let check_like = c.findIndex(
-    (elm) => elm.category == obj.category && elm.code == obj.code,
-  );
+    let check_like = c.findIndex(
+      (elm) => elm.category == obj.category && elm.code == obj.code,
+    );
 
-  if (check_like != -1) {
-    var like_btn = $('.like_btn');
+    if (check_like != -1) {
+      var like_btn = $('.like_btn');
 
-    $('.like_btn').attr('value', 'like');
-    like_btn.addClass('text-danger');
-    like_btn.removeClass('text-muted');
-  } else {
-    var like_btn = $('.like_btn');
-    $('.like_btn').attr('value', 'unlike');
-    like_btn.addClass('text-muted');
-    like_btn.removeClass('text-danger');
+      $('.like_btn').attr('value', 'like');
+      like_btn.addClass('text-danger');
+      like_btn.removeClass('text-muted');
+    } else {
+      var like_btn = $('.like_btn');
+      $('.like_btn').attr('value', 'unlike');
+      like_btn.addClass('text-muted');
+      like_btn.removeClass('text-danger');
+    }
   }
 });
