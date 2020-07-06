@@ -9,7 +9,7 @@ $(document).ready(function () {
     furn = '',
     food = '';
   //get JSON from External file
-  $.getJSON('../../../json/category.json', function (data) {
+  $.getJSON('../../../json/category_ar.json', function (data) {
     $.each(data, function (index, value) {
       // console.log('data :', data);
 

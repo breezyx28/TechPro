@@ -1,0 +1,497 @@
+{
+  "category": {
+    "food": [
+      {
+        "image_url": "img/products/food/cheetos.jpg",
+        "company": "foody",
+        "key_word": ["شبس", "مقبلات", "معلب", "شيتوس"],
+        "name": "شبس شيتوس",
+        "price": 2.99,
+        "total_quanitiy": 283,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/doritos.png",
+        "company": "foody",
+        "key_word": ["شبس", "مقبلات", "معلب", "دوريتوز"],
+        "name": "شبس دوريتوز",
+        "price": 1.99,
+        "total_quanitiy": 23,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/laze.gif",
+        "company": "foody",
+        "key_word": ["شبس", "مقبلات", "معلب", "ليز"],
+        "name": "شبس ليز",
+        "price": 4.0,
+        "total_quanitiy": 83,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/prengels.jpg",
+        "company": "foody",
+        "key_word": ["شبس", "مقبلات", "معلب", "برينقلز"],
+        "name": "شبس برينقلز",
+        "price": 5.0,
+        "total_quanitiy": 28,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/nutella.jpg",
+        "company": "foody",
+        "key_word": ["شوكولاتة", "معلب"],
+        "name": "نوتيلا",
+        "price": 25.0,
+        "total_quanitiy": 43,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/bueno.jpg",
+        "company": "foody",
+        "key_word": ["شوكولاتة", "مقبلات", "معلب"],
+        "name": "كندر بوينو",
+        "price": 10.0,
+        "total_quanitiy": 20,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/7days.jpg",
+        "key_word": ["شوكولاتة", "مقبلات", "معلب", "كيك"],
+        "name": "7days",
+        "price": 5.0,
+        "total_quanitiy": 200,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/food/snickers.jpg",
+        "company": "foody",
+        "key_word": ["شوكولاتة", "مقبلات", "معلب"],
+        "name": "سنكرز",
+        "price": 5.0,
+        "total_quanitiy": 20,
+        "rate": 5
+      }
+    ],
+    "clothes": [
+      {
+        "image_url": "img/products/clothes/cap1.jpg",
+        "company": "ZARA",
+        "name": "كاب",
+        "key_word": ["كاب", "قبعة", "ملبوسات للرأس"],
+        "price": 20.0,
+        "color": "ازرق",
+        "material": "تيل",
+        "size": 4,
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/cap2.jpg",
+        "company": "ZARA",
+        "name": "كاب",
+        "key_word": ["كاب", "قبعة", "ملبوسات للرأس"],
+        "price": 15.0,
+        "color": "ملون",
+        "material": "تيل",
+        "size": 4,
+        "total_quantity": 20,
+        "rate": 3
+      },
+      {
+        "image_url": "img/products/clothes/frame.jpg",
+        "company": "RayBan",
+        "name": "ريبان فريم مظلل ",
+        "key_word": ["فريم", "نظارة", "نظارات", "مظلل"],
+        "price": 20.0,
+        "color": "اسود",
+        "material": "زجاج",
+        "size": "متوسط",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/clothes/hat.jpg",
+        "company": "OBEY",
+        "name": "قبعة",
+        "key_word": ["قبعة", "ملبوسات رأس"],
+        "price": 20.0,
+        "color": "ازرق",
+        "material": "wool",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/fram2.jpg",
+        "company": "RAYBAN",
+        "name": "فريم لمتزلجين الجليد",
+        "key_word": ["فريم", "نظارات", "نظارة"],
+        "price": 20.0,
+        "color": "ازرق سماوي",
+        "material": "زجاج",
+        "size": "L",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/hand_bag.jpg",
+        "company": "GUCCI",
+        "name": "حقبة قوتشي نسائية",
+        "key_word": ["حقيبة يد", "حقيبة", "حقيبة نسائية"],
+        "price": 200.0,
+        "color": "اسود",
+        "material": "جلد",
+        "size": "L",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/clothes/shirt1.jpg",
+        "company": "ZARA",
+        "name": "قميص كلاسيكي",
+        "key_word": ["قميص", "قمصان", "كلاسيكي"],
+        "price": 25.0,
+        "color": "زهري",
+        "material": "قطن",
+        "size": "L",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/shirt2.jpg",
+        "company": "NIKE",
+        "name": "تيشيرت",
+        "key_word": ["تيشيرت", "قمصان"],
+        "price": 20.0,
+        "color": "برتقالي",
+        "material": "قطن",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/shirt3.jpg",
+        "company": "ARMANI",
+        "name": "قميص بأكمام",
+        "key_word": ["قميص", "قمصان", "كلاسيكي", "أكمام"],
+        "price": 27.0,
+        "color": "ابيض",
+        "material": "قطن",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 3
+      },
+      {
+        "image_url": "img/products/clothes/shoe1.jpg",
+        "company": "ADIDAS",
+        "name": "حذاء اديداس ابيض",
+        "key_word": ["حذاء", "احذية", "رياضي "],
+        "price": 74.99,
+        "color": "ابيض",
+        "material": "بلاستسك",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/shoe2.jpg",
+        "company": "NIKE",
+        "name": "حذاء نايك اسود",
+        "key_word": ["حذاء", "احذية", "سنيكر"],
+        "price": 120.0,
+        "color": "اسود",
+        "material": "بلاستيك",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/shoe3.jpg",
+        "company": "NIKE",
+        "name": "حذاء نايك احمر",
+        "key_word": ["حذاء", "احذية", "سنيكر"],
+        "price": 400.0,
+        "color": "احمر",
+        "material": "قطن",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/clothes/shoe4.jpg",
+        "company": "ALL STARS",
+        "name": "حذاء كلاسيكي",
+        "key_word": ["حذاء", "احذية"],
+        "price": 95.0,
+        "color": "بني",
+        "material": "قطن",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 3
+      },
+      {
+        "image_url": "img/products/clothes/shoe5.jpg",
+        "company": "UNKNOWN",
+        "name": "حذاء كلاسيكي جلدي",
+        "key_word": ["حذاء", "احذية"],
+        "price": 95.0,
+        "color": "بني",
+        "material": "جلد",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/clothes/women_shoe.jpg",
+        "company": "PRADA",
+        "name": "حذاء نسائي ذو كعب عالي",
+        "key_word": ["حذاء", "احذية", "حذاء نسائي"],
+        "price": 300.0,
+        "color": "بني",
+        "material": "جلد",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/women_shorts.jpg",
+        "company": "JINES",
+        "name": "شوراتات بناتية",
+        "key_word": ["شورت", "شورتات", "شورات بناتية", "ملبوسات"],
+        "price": 300.0,
+        "color": "متنوع",
+        "material": "جينز",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 4
+      },
+      {
+        "image_url": "img/products/clothes/watch1.jpg",
+        "company": "SAPPHIRE",
+        "name": "ساعة يد",
+        "key_word": ["ساعة", "ساعة يد", "اكسسوارات", "يد"],
+        "price": 600.0,
+        "color": "ازرق",
+        "material": "معدن",
+        "size": "M",
+        "total_quantity": 120,
+        "rate": 5
+      }
+    ],
+    "Furniture": [
+      {
+        "image_url": "img/products/Furnitures/5ac9ab8521128c741465e4cddce2a70c.jpg",
+        "company": "ARMADA",
+        "name": "درج خشبي حائطي",
+        "key_word": ["درج", "مكتب"],
+        "price": 200.0,
+        "color": "اسود-بني",
+        "material": "خشب",
+        "size": "29 شبر",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/90d6d8b35dbe78484d7078e93255ba10.jpg",
+        "company": "ARMADA",
+        "name": "رف اسود",
+        "key_word": ["رف", "مكتب"],
+        "price": 400.0,
+        "color": "اسود",
+        "material": "خشب",
+        "size": "40 شبر",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/172bf8ac861d868baeb6113a3109d111.jpg",
+        "company": "ARMADA",
+        "name": "رف كتب",
+        "key_word": ["رف", "مكتب", " رف كتب"],
+        "price": 400.0,
+        "color": "بني",
+        "material": "خشب",
+        "size": "62 شبر",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/8222fc21aa500ffeb9c1b087c26a0212.jpg",
+        "company": "ARMADA",
+        "name": "أريكة لغرفة المعيشة",
+        "key_word": ["غرقة المعيشة", "أريكة", "صفرة"],
+        "price": 700.0,
+        "color": "بني",
+        "material": "بوليستر",
+        "size": "6 قدم",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/a93c8af3e74de68e48c12d4471df0c12.jpg",
+        "company": "ARMADA",
+        "name": "طقم طاولة طعام",
+        "key_word": ["غرفة معيشة", "طاولة", "ديكور"],
+        "price": 250.0,
+        "color": " بني-اسود",
+        "material": "خشب",
+        "size": "2 قدم",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/c59fce63d6cf963d28005432aed543ed.jpg",
+        "company": "ARMADA",
+        "name": "رف غرفة نوم",
+        "key_word": ["غرفة نوم", "رف", "ديكور"],
+        "price": 340.0,
+        "color": " تيل-ابيض-رمادي",
+        "material": "خشب",
+        "size": "54 شبر",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/d45c5563d9a1378abdc7116ad30a9857.jpg",
+        "company": "ARMADA",
+        "name": "كرسي استرخاء خشبي",
+        "key_word": ["غرفة معيشة", "كرسي", "ديكور"],
+        "price": 170.0,
+        "color": " بني",
+        "material": "خشبي",
+        "size": "متوسط",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Furnitures/michael-dolejs-eH1zeKa9u4c-unsplash.jpg",
+        "company": "ARMADA",
+        "name": "لمبة حائط",
+        "key_word": ["لمبة", "إضائة", "ديكور"],
+        "price": 70.0,
+        "color": " اسود",
+        "material": "ألمونيوم",
+        "size": "-",
+        "total_quantity": 120,
+        "rate": 5
+      }
+    ],
+    "Electronics": [
+      {
+        "image_url": "img/products/Electronics/blender1.jpg",
+        "company": "PANASONIC",
+        "name": "خلاط",
+        "key_word": ["مطبخ", "خلاط", "طبخ", "أدوات منزلية"],
+        "price": 90.0,
+        "color": "أسود",
+        "material": "فايبر",
+        "size": "متوسط",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/microwave.jpg",
+        "company": "PANASONIC",
+        "name": "مايكروويف حديث",
+        "key_word": ["مطبخ", "مايكروويف", "طبخ", "أدوات منزلية"],
+        "price": 170.0,
+        "color": "أسود",
+        "material": "معدن",
+        "size": "متوسط",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/oven.jpg",
+        "company": "PANASONIC",
+        "name": "فرن أسود",
+        "key_word": ["مطبخ", "فرن", "طبخ", "أدوات منزلية"],
+        "price": 100.0,
+        "color": "أسود",
+        "material": "معدن",
+        "size": "متوسط",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/smart_screen2.jpg",
+        "company": "SAMSUNG",
+        "name": "شاشة سامنسق ذكية",
+        "key_word": [
+          "غرفة معيشة",
+          "تلفاز",
+          "شاشة زكية",
+          "شاشة",
+          "أدوات منزلية"
+        ],
+        "price": 1000.0,
+        "color": "فضة",
+        "material": "معدن",
+        "size": "64 شبر",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/speaker1.jpg",
+        "company": "FLUX",
+        "name": "مكبر صوت حديث 1",
+        "key_word": ["غرفة", "سامعة", "مكبرات صوت", "مكبر صوت", "أدوات منزلية"],
+        "price": 50.0,
+        "color": "بيجي",
+        "material": "معدن",
+        "size": "صغير",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/speaker2.jpg",
+        "company": "FLUX",
+        "name": "مكبر صوت حديث 2",
+        "key_word": ["غرفة", "مكبر صوت", "مكبرات صوت", "سماعة", "أدوات منزلية"],
+        "price": 50.0,
+        "color": "بيجي",
+        "material": "معدني",
+        "size": "صغير",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/stove1.jpg",
+        "company": "PANDA",
+        "name": "فرن حديث",
+        "key_word": ["مطبخ", "فرن", "طبخ", "أدوات منزلية"],
+        "price": 112.0,
+        "color": "أسود",
+        "material": "زجاج-فايبر-معدن",
+        "size": "متوسط",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/vacuum.jpg",
+        "company": "FLUX",
+        "name": "مكنسة كهربائية حديثة",
+        "key_word": ["غرفة", "مكنسة كهربائية", "نظافة", "أدوات منزلية"],
+        "price": 200.0,
+        "color": "بيجي",
+        "material": "معدن",
+        "size": "متوسط",
+        "total_quantity": 120,
+        "rate": 5
+      },
+      {
+        "image_url": "img/products/Electronics/wash_machine.png",
+        "company": "FLUX",
+        "name": "غسالة متطورة",
+        "key_word": ["حمام", "غسيل", "تنظيف", "غسالة", "أدوات منزلية"],
+        "price": 990.0,
+        "color": "اسود",
+        "material": "معدن",
+        "size": "متوسط",
+        "total_quantity": 120,
+        "rate": 5
+      }
+    ]
+  }
+}

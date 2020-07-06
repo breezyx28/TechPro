@@ -21,7 +21,7 @@ $(document).ready(function () {
   }
   //   category_check
   //get JSON from External file
-  $.getJSON('../../../json/category.json', function (data) {
+  $.getJSON('../../../json/category_ar.json', function (data) {
     $.each(data, function (index, value) {
       // console.log('data :', data);
 
@@ -40,7 +40,7 @@ $(document).ready(function () {
       class="upper_holder d-flex flex-row justify-content-between"
     >
       <small class="cat_product_image_badge bg-light text-muted"
-        >NEW</small
+        >جديد</small
       >
       <div
         class="cat_product_image_icons d-flex justify-content-between text-muted"

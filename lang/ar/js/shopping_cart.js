@@ -35,7 +35,7 @@ $(document).ready(function () {
   };
 
   //   external file
-  $.getJSON('../../../json/category.json', function (data) {
+  $.getJSON('../../../json/category_ar.json', function (data) {
     var local_array = JSON.parse(localStorage.getItem('key'));
 
     total_product(local_array.length);
@@ -69,7 +69,7 @@ $(document).ready(function () {
     }
     if (local_array == '' || local_array == false) {
       $('.shopping_cart_table_rows').append(
-        '<tr class="text-center"><td colspan="4">No Data</td></tr>',
+        '<tr class="text-center"><td colspan="4">لا يوجد بيانات</td></tr>',
       );
     }
     compare(data);
