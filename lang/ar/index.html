@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="../../lib/bootstrap.min.css" />
     <link rel="stylesheet" href="../../lib/fontawesome-free/css/all.css" />
-    <link rel="stylesheet" href="../../css/loader.css" />
+    <!-- <link rel="stylesheet" href="../../css/loader.css" /> -->
     <link rel="stylesheet" href="css/swip_animation.css" />
 
     <link rel="stylesheet" href="../../css/main.css" />
@@ -57,10 +57,12 @@
           <ul
             class="navbar-nav ml-auto pl-4 col-md-7 d-flex justify-content-between"
           >
-            <li class="nav-item"><a href="#" class="nav-link">SERVICES</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">CATALOG</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">OPENING</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">الخدمات</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">الكتلوج</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">جدول العمل</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">التواصل</a></li>
           </ul>
         </div>
       </div>
@@ -126,13 +128,13 @@
           <div class="srv_side1 col-6 col-md-4 col-sm-4 col-lg-6 col-xl-6">
             <div class="srv_elm float-right">
               <div
-                class="srv_elm_header d-fle flex-column justify-content-between"
+                class="srv_elm_header d-flex flex-column justify-content-lg-between justify-content-start align-items-start text-center"
               >
-                <div class="text-muted srv_top_head_desc float-right"></div>
-                <br />
-                <div class="h4 srv_head_title float-right"></div>
-                <br />
-                <h6 class="srv_bttom_desc float-right"></h6>
+                <div class="text-muted srv_top_head_desc"></div>
+                <!-- <br /> -->
+                <div class="h4 srv_head_title"></div>
+                <!-- <br /> -->
+                <div class="h6 srv_bttom_desc"></div>
               </div>
               <div class="srv_elm_content d-flex flex-row">
                 <div class="w-1 row">
@@ -479,25 +481,25 @@
           var key = $(this).text();
 
           switch (key) {
-            case 'SERVICES':
+            case 'الخدمات':
               $('html, body').animate(
                 { scrollTop: $('.srv_container').offset().top },
                 1000,
               );
               break;
-            case 'CATALOG':
+            case 'الكتلوج':
               $('html, body').animate(
                 { scrollTop: $('.cat_conatiner').offset().top },
                 1000,
               );
               break;
-            case 'OPENING':
+            case 'جدول العمل':
               $('html, body').animate(
                 { scrollTop: $('.op_wall_desc').offset().top },
                 1000,
               );
               break;
-            case 'CONTACT':
+            case 'التواصل':
               $('html, body').animate(
                 { scrollTop: $('.footer').offset().top },
                 1000,

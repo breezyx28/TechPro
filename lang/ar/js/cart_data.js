@@ -133,7 +133,7 @@ $(document).ready(function () {
       if (message == 'OK') {
         //enable link after request is done
         $(this).css('pointer-events', 'auto');
-        alert('Your Order has been sent successfuly .....');
+        alert('تم ....');
       }
     });
   });

@@ -3,7 +3,7 @@ $(document).ready(function () {
     c = 0;
   var slider = {
     1: {
-      top_header: 'قدراتنا هي ',
+      top_header: 'خدماتنا هي ',
       title: 'الإستيراد و التصدير',
       description: 'جميع المنتجات التي نقوم بإستيرادها اصلية ',
       msg: 'lorem ipsum dol .',
@@ -12,7 +12,7 @@ $(document).ready(function () {
       active: true,
     },
     2: {
-      top_header: 'قدراتنا هي ',
+      top_header: 'خدماتنا هي ',
       title: 'التخليص الجمركي',
       description: 'يشمل اجراءات التغليف و التحميل و الشحن',
       image: '../../img/fotografierende-xqC7hdLMpgk-unsplash.jpg',
@@ -20,7 +20,7 @@ $(document).ready(function () {
       active: false,
     },
     3: {
-      top_header: 'قدراتنا هي',
+      top_header: 'خدماتنا هي',
       title: 'الرقابة على البضائع',
       description: 'في حالات التعامل مع المصانع و الشركات الصينية',
       image: '../../img/zsofia-vera-mezei-6AQKMF5jbYc-unsplash.jpg',
@@ -28,7 +28,7 @@ $(document).ready(function () {
       active: false,
     },
     4: {
-      top_header: 'قدراتنا هي',
+      top_header: 'خدماتنا هي',
       title: 'رحلات تجارية إلى جمهورية الصين',
       description: 'ترتيب و تجهيز الرحلات التجارية إلى الصين الشعبية',
       image: '../../img/zsofia-vera-mezei-6AQKMF5jbYc-unsplash.jpg',
