@@ -3,28 +3,35 @@ $(document).ready(function () {
     c = 0;
   var slider = {
     1: {
-      top_header: 'Lorem ipsum dolor sit.',
-      title: 'SERVICE 1',
-      description: 'Lorem ipsum dolor sit amet consectetur.',
-      msg: 'Lorem ipsum dolor sit amet consectetur.',
+      top_header: 'Our Services',
+      title: 'Import & Export',
+      description: 'All the products we provide are orignal',
       image: 'img/photo-1576731753569-3e93a228048c.jpg',
       position: 1,
       active: true,
     },
     2: {
-      top_header: 'Lorem ipsum dolor sit.',
-      title: 'SERVICE 2',
-      description: 'Lorem ipsum dolor sit amet consectetur.',
+      top_header: 'Our Services',
+      title: 'Customs Clearance',
+      description: 'It includes packaging, loading and shipping procedures',
       image: 'img/fotografierende-xqC7hdLMpgk-unsplash.jpg',
       position: 2,
       active: false,
     },
     3: {
-      top_header: 'Lorem ipsum dolor sit.',
-      title: 'SERVICE 3',
-      description: 'Lorem ipsum dolor sit amet consectetur.',
+      top_header: 'Our Services',
+      title: 'Control of Goods',
+      description: 'In cases of dealing with Chinese factories and companies',
       image: 'img/zsofia-vera-mezei-6AQKMF5jbYc-unsplash.jpg',
       position: 3,
+      active: false,
+    },
+    4: {
+      top_header: 'Our Services',
+      title: 'Commercial flights to China',
+      description: 'Arranging and preparing commercial trips to popular China',
+      image: 'img/zsofia-vera-mezei-6AQKMF5jbYc-unsplash.jpg',
+      position: 4,
       active: false,
     },
   };
@@ -32,31 +39,51 @@ $(document).ready(function () {
   var msgs = {
     1: {
       1: `<div id="msg_1" class="header" style="overflow-y: auto;">
-      <h4>1.</h4>
+      <div class="mb-2">
+      <img src="img/icons/import.png" width="50" height="50" >
+      </div>
       <p class="text-dark">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in
-        fuga explicabo, distinctio eum voluptatibus asperiores adipisci
-        ad minus unde.
+      Importing the original aspirates for Toyota, Nissan, Mitsubishi and Isuzu from Thailand.
       </p>
     </div> `,
     },
     2: {
       2: `<div id="msg_2" class="header" style="overflow-y: auto;">
-        <h4>2.</h4>
+      <div class="mb-2">
+      <img src="img/icons/delivery-box.png" width="50" height="50">
+      </div>
         <p class="text-dark">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in
-          fuga explicabo, distinctio eum voluptatibus asperiores adipisci
-          ad minus unde.
+        Import all the needs of customers from China and the Kingdom of Thailand and do all the
+         procedures of packaging, loading, shipping and customs clearance and deliver them to
+          the customer’s headquarters, according to the conditions, standards and standards
+           determined by the customer in advance and at competitive prices (China and Thailand prices),
+            through offers Pricing offered to the customer in advance at his request.
         </p>
       </div>`,
     },
     3: {
       3: `<div id="msg_3" class="header" style="overflow-y: auto;">
-      <h4>3.</h4>
+      <div class="mb-2">
+      <img src="img/icons/assurance.png" width="50" height="50">
+      </div>
       <p class="text-dark">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in
-        fuga explicabo, distinctio eum voluptatibus asperiores adipisci
-        ad minus unde.
+      In cases in which companies or individuals deal with Chinese factories and companies, our company
+       provides a service to control all the goods that are supplied to the customer by doing its examination
+        and ensuring that they comply with all conditions and standards agreed between the exporter and the importer,
+         and this service includes Receiving and transporting goods from factories, clearing them,
+          shipping them and delivering them to where the customer desires in all parts of Sudan.
+      </p>
+    </div>`,
+    },
+    4: {
+      4: `<div id="msg_3" class="header" style="overflow-y: auto;">
+      <div class="mb-2">
+      <img src="img/icons/plane-tickets.png" width="50" height="50">
+      </div>
+      <p class="text-dark">
+      Organizing and arranging commercial trips to the People's Republic of China, and this service includes flight reservations,
+       hotels and reception at the airport and providing transportation for cities and factories with the
+        provision of translators with high experience and credibility, confidence and honesty, in addition to providing warehouses for goods in China And Sudan.
       </p>
     </div>`,
     },
@@ -75,7 +102,7 @@ $(document).ready(function () {
   reset();
 
   $('#next_page').click(function () {
-    for (var i = 1; i <= 3; i++) {
+    for (var i = 1; i <= 4; i++) {
       if (slider[i].active == true) {
         c = slider[i].position;
         console.log(c);
@@ -159,7 +186,7 @@ $(document).ready(function () {
   });
 
   $('#previous_page').click(function () {
-    for (var i = 1; i <= 3; i++) {
+    for (var i = 1; i <= 4; i++) {
       if (slider[i].active == true) {
         c = slider[i].position;
         console.log(c);

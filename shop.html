@@ -386,18 +386,31 @@
           </div>
           <div class="w-100 d-none"></div>
           <div class="col-12">
-            <div class="row b-primary">
-              <div class="col-12">
-                <form action="">
-                  <input
-                    type="email"
-                    name="email"
-                    class="contact_sub_email w-100"
-                    placeholder="Your email..."
-                    id=""
-                  />
-                </form>
+            <div
+              class="d-flex flex-lg-row flex-column justify-contetn-lg-between justify-content-center align-items- align-items-lg-center"
+            >
+              <input
+                type="text"
+                name="opinion"
+                class="contact_sub_email col-12 col-lg-10"
+                placeholder="Your Opinion Is Important ..."
+                id="user_opinion"
+                minlength="2"
+                maxlength="450"
+                required
+              />
+              <div
+                style="background-color: #31d4ae; cursor: pointer;"
+                class="col-lg-2 col-12 text-center border-0 p-1 text-white"
+                id="send_opinion"
+              >
+                إرسال
               </div>
+            </div>
+            <div
+              class="mt-2 alert alert-secondary border-0 text-muted d-flex justify-content-start"
+            >
+              you only have <b>450</b> character
             </div>
           </div>
         </div>
@@ -416,6 +429,9 @@
           >Copyright <i class="fa fa-copyright" aria-hidden="true"></i>2020
           SCRIPTHOUSE. All right reserved. Designed by Breezy</small
         >
+      </div>
+      <div class="text-center mt-4 my-4 text-white">
+        <small>Language | <a href="lang/ar/index.html">العربية</a></small>
       </div>
     </section>
     <!-- END FOOTER -->
@@ -473,6 +489,10 @@
         });
       });
     </script>
+
+<script src="lib/smtp.js"></script>
+<script src="js/opinion.js"></script>
+
     <!-- scroll effect with navbar -->
     <script src="js/nav_scrooler.js"></script>
     <script src="js/loader.js"></script>
