@@ -157,6 +157,7 @@ body::-webkit-scrollbar {
   color: #111114 !important;
 }
 #top_nav {
+  background-color: #133;
   position: fixed;
   width: 100vw;
   font-weight: 300;
