@@ -28,6 +28,7 @@ $(document).ready(function () {
           $.notify('تم .... ', 'success', {
             // if autoHide, hide after milliseconds
             autoHideDelay: 3000,
+            style: 'bootstrap',
           });
         } else {
           // alert('حدث خطأ في الإرسال ....');
