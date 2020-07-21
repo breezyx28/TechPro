@@ -275,7 +275,11 @@ $(document).ready(function () {
   //..
   $('#final_checkout').click(function () {
     if (local_check == null) {
-      alert('the cart is empty can not make this process ');
+      // alert('the cart is empty can not make this process ');
+      $.notify('السلة فارغة !!', 'warn', {
+        // if autoHide, hide after milliseconds
+        autoHideDelay: 3000,
+      });
     } else {
       //disable link after request
       $(this).css('pointer-events', 'none');
@@ -295,7 +299,11 @@ $(document).ready(function () {
               localStorage.clear();
               block_btn(local_check);
               window.location.reload();
-              alert('your cart elements has been send Successfuly ....');
+              // alert('your cart elements has been send Successfuly ....');
+              $.notify('تم', 'success', {
+                // if autoHide, hide after milliseconds
+                autoHideDelay: 3000,
+              });
             }
           });
         }.bind(this),

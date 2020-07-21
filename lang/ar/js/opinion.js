@@ -5,7 +5,11 @@ $(document).ready(function () {
     var text = $('#user_opinion').val();
 
     if (text.length < 1) {
-      alert('الرد فارغ الرجاء الكتابة ثم الإرسال');
+      // alert('الرد فارغ الرجاء الكتابة ثم الإرسال');
+      $.notify('الرد فارغ الرجاء الكتابة ثم الإرسال', 'warn', {
+        // if autoHide, hide after milliseconds
+        autoHideDelay: 3000,
+      });
     } else {
       Email.send({
         SecureToken: '11c690b3-7066-4ee8-9ff7-c2e1e0c91e07',
@@ -20,9 +24,17 @@ $(document).ready(function () {
           $('#user_opinion').val('');
           $(this).text('إرسال');
 
-          alert('تم ....');
+          // alert('تم ....');
+          $.notify('تم .... ', 'success', {
+            // if autoHide, hide after milliseconds
+            autoHideDelay: 3000,
+          });
         } else {
-          alert('حدث خطأ في الإرسال ....');
+          // alert('حدث خطأ في الإرسال ....');
+          $.notify('حدث خطأ في الإرسال ', 'error', {
+            // if autoHide, hide after milliseconds
+            autoHideDelay: 3000,
+          });
         }
       });
     }

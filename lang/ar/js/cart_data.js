@@ -5,7 +5,11 @@ $(document).ready(function () {
     code = url.searchParams.get('code');
 
   if (!category && !code) {
-    alert('Wrong Direction ......');
+    // alert('Wrong Direction ......');
+    $.notify('رابط خاطأ', 'error', {
+      // if autoHide, hide after milliseconds
+      autoHideDelay: 3000,
+    });
     window.location.href = '/shop.html';
   }
 
@@ -133,7 +137,11 @@ $(document).ready(function () {
       if (message == 'OK') {
         //enable link after request is done
         $(this).css('pointer-events', 'auto');
-        alert('تم ....');
+        // alert('تم ....');
+        $.notify('تم ..... ', 'success', {
+          // if autoHide, hide after milliseconds
+          autoHideDelay: 3000,
+        });
       }
     });
   });

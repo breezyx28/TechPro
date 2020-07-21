@@ -56,7 +56,11 @@ $(document).ready(function () {
       }
     }
     if (state == 'like') {
-      alert('like');
+      // alert('like');
+      $.notify('اعجاب', 'success', {
+        // if autoHide, hide after milliseconds
+        autoHideDelay: 3000,
+      });
       $(this).attr('value', 'unlike');
       like_btn.addClass('text-muted');
       like_btn.removeClass('text-danger');

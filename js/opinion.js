@@ -5,7 +5,11 @@ $(document).ready(function () {
     var text = $('#user_opinion').val();
 
     if (text.length < 1) {
-      alert('Empty Reply !');
+      // alert('Empty Reply !');
+      $.notify('Empty Reply ! ', 'error', {
+        // if autoHide, hide after milliseconds
+        autoHideDelay: 3000,
+      });
     } else {
       Email.send({
         SecureToken: '11c690b3-7066-4ee8-9ff7-c2e1e0c91e07',
@@ -18,11 +22,18 @@ $(document).ready(function () {
           //enable link after request is done
           $(this).css('pointer-events', 'auto');
           $('#user_opinion').val('');
-          $(this).text('Send ...');
-
-          alert('Done ...');
+          $(this).text('Send');
+          $.notify('Done .... ', 'success', {
+            // if autoHide, hide after milliseconds
+            autoHideDelay: 3000,
+          });
+          // alert('Done ...');
         } else {
-          alert('Sending Error ...');
+          $.notify('Sending Error  .... ', 'error', {
+            // if autoHide, hide after milliseconds
+            autoHideDelay: 3000,
+          });
+          // alert('Sending Error ...');
         }
       });
     }

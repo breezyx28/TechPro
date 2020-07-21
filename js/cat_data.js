@@ -236,7 +236,11 @@ $(document).ready(function () {
       if (local_exists) {
         console.log('local_exists : ', local_exists);
 
-        alert('exists');
+        // alert('exists');
+        $.notify('exists ', 'error', {
+          // if autoHide, hide after milliseconds
+          autoHideDelay: 3000,
+        });
       } else {
         console.log('cart_array :', cart_array);
 
