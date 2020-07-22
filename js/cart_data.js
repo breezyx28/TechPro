@@ -13,7 +13,7 @@ $(document).ready(function () {
     window.location.href = '/shop.html';
   }
 
-  let pages = ['food', 'clothes', 'Electronics', 'furniture'];
+  let pages = ['spares', 'clothes', 'Electronics', 'furniture'];
 
   if (pages.includes(category)) {
     $('.prev_page')
@@ -25,7 +25,7 @@ $(document).ready(function () {
     clo = [],
     elec = '',
     furn = '',
-    food = '';
+    spares = '';
   //get JSON from External file
   $.getJSON('../json/category.json', function (data) {
     $.each(data, function (index, value) {
@@ -80,18 +80,18 @@ $(document).ready(function () {
             value.category.Electronics[code].image_url,
           );
         }
-        if (cat == 'food') {
-          $('.cart_main_desc_title').html(value.category.food[code].name);
+        if (cat == 'spares') {
+          $('.cart_main_desc_title').html(value.category.spares[code].name);
           $('.cart_main_desc_price').attr(
             'value',
-            value.category.food[code].price,
+            value.category.spares[code].price,
           );
           $('.cart_main_desc_price').html(
-            '$' + value.category.food[code].price,
+            '$' + value.category.spares[code].price,
           );
           $('.cart_mian_img_holder > img').attr(
             'src',
-            value.category.food[code].image_url,
+            value.category.spares[code].image_url,
           );
         }
       });
@@ -105,8 +105,8 @@ $(document).ready(function () {
     case 'furniture':
       contents('furniture');
       break;
-    case 'food':
-      contents('food');
+    case 'spares':
+      contents('spares');
       break;
     case 'Electronics':
       contents('Electronics');

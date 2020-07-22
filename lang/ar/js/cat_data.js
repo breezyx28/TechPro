@@ -7,7 +7,7 @@ $(document).ready(function () {
     categ = '',
     elec = '',
     furn = '',
-    food = '';
+    spares = '';
   //get JSON from External file
   $.getJSON('../../../json/category_ar.json', function (data) {
     $.each(data, function (index, value) {
@@ -17,7 +17,7 @@ $(document).ready(function () {
       categ = value.clothes.length;
       elec = value.Electronics.length;
       furn = value.Furniture.length;
-      food = value.food.length;
+      spares = value.spares.length;
       // console.log(value);
     });
   });
@@ -103,8 +103,8 @@ $(document).ready(function () {
           item = value.category.clothes[i];
           content(i, cat, item.image_url, item.name, item.price, item.rate);
         }
-        if (cat == 'food') {
-          item = value.category.food[i];
+        if (cat == 'spares') {
+          item = value.category.spares[i];
           content(i, cat, item.image_url, item.name, item.price, item.rate);
         }
         if (cat == 'furniture') {
@@ -181,9 +181,9 @@ $(document).ready(function () {
         }
       });
       break;
-    case 'food':
+    case 'spares':
       i = 6;
-      view6('food');
+      view6('spares');
       w = 0;
       v = 0;
       $('.load_more').click(function () {
@@ -192,8 +192,8 @@ $(document).ready(function () {
         v++;
         k = i * v + 6;
         for (var c = w; c <= k - 1; c++) {
-          if (c <= food - 1) {
-            category('food', c);
+          if (c <= spares - 1) {
+            category('spares', c);
           }
         }
       });

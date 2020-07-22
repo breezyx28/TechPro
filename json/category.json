@@ -1,74 +1,74 @@
 {
   "category": {
-    "food": [
+    "spares": [
       {
-        "image_url": "img/products/food/cheetos.jpg",
-        "company": "foody",
-        "key_word": ["chips", "snaks", "canned", "cheetos"],
-        "name": "chips cheetos",
-        "price": 2.99,
+        "image_url": "img/products/spares/Toyota_Tacoma_Projector_Headlights.jpg",
+        "company": "toyota",
+        "key_word": ["spares", "toyota", "light", "headlights"],
+        "name": "Toyota Headlights",
+        "price": 19.99,
         "total_quanitiy": 283,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/doritos.png",
-        "company": "foody",
-        "key_word": ["chips", "snaks", "canned", "doritos"],
-        "name": "chips doritos",
-        "price": 1.99,
+        "image_url": "img/products/spares/air_filter.jpg",
+        "company": "spares",
+        "key_word": ["spare", "carfront", "air"],
+        "name": "Air Filter",
+        "price": 7.99,
         "total_quanitiy": 23,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/laze.gif",
-        "company": "foody",
-        "key_word": ["chips", "snaks", "canned", "laze"],
-        "name": "chips laze",
-        "price": 4.0,
+        "image_url": "img/products/spares/exhaust.jpg",
+        "company": "spares",
+        "key_word": ["spare", "carBack"],
+        "name": "Exhaust",
+        "price": 17.0,
         "total_quanitiy": 83,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/prengels.jpg",
-        "company": "foody",
-        "key_word": ["chips", "snaks", "canned", "prengels"],
-        "name": "chips prengels",
-        "price": 5.0,
+        "image_url": "img/products/spares/injector_fuel.jpg",
+        "company": "spares",
+        "key_word": ["set", "engin", "fuel"],
+        "name": "Injector Fuel",
+        "price": 10.0,
         "total_quanitiy": 28,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/nutella.jpg",
-        "company": "foody",
-        "key_word": ["chocolate", "canned"],
-        "name": "nutella",
+        "image_url": "img/products/spares/lexus_fuel_filter.jpg",
+        "company": "spares",
+        "key_word": ["fuel", "filter"],
+        "name": "Lexus Fuel Filter",
         "price": 25.0,
         "total_quanitiy": 43,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/bueno.jpg",
-        "company": "foody",
-        "key_word": ["chocolate", "snaks", "canned"],
-        "name": "kinder bueno",
+        "image_url": "img/products/spares/rubber_boot.jpg",
+        "company": "spares",
+        "key_word": ["set", "rubber"],
+        "name": "Rubber Boot",
         "price": 10.0,
         "total_quanitiy": 20,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/7days.jpg",
-        "key_word": ["chocolate", "snaks", "canned", "cake"],
-        "name": "7days",
+        "image_url": "img/products/spares/spark_plug.jpg",
+        "key_word": ["spare", "electric", "engin"],
+        "name": "Spark Plug",
         "price": 5.0,
         "total_quanitiy": 200,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/snickers.jpg",
-        "company": "foody",
-        "key_word": ["chocolate", "snaks", "canned"],
-        "name": "snickers",
-        "price": 5.0,
+        "image_url": "img/products/spares/tires.jpg",
+        "company": "spares",
+        "key_word": ["part", "snaks", "canned"],
+        "name": "Lexus Tire 23",
+        "price": 50.0,
         "total_quanitiy": 20,
         "rate": 5
       }

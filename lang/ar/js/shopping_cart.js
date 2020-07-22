@@ -53,8 +53,8 @@ $(document).ready(function () {
 
             tr(value2.category, a.image_url, a.name, a.price, value2.code);
           }
-          if (value1.food[value2.code] && value2.category == 'food') {
-            let a = value1.food[value2.code];
+          if (value1.spares[value2.code] && value2.category == 'spares') {
+            let a = value1.spares[value2.code];
             tr(value2.category, a.image_url, a.name, a.price, value2.code);
           }
           if (

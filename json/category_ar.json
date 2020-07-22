@@ -1,74 +1,75 @@
 {
   "category": {
-    "food": [
+    "spares": [
       {
-        "image_url": "img/products/food/cheetos.jpg",
-        "company": "foody",
-        "key_word": ["شبس", "مقبلات", "معلب", "شيتوس"],
-        "name": "شبس شيتوس",
-        "price": 2.99,
+        "image_url": "img/products/spares/Toyota_Tacoma_Projector_Headlights.jpg",
+        "company": "تويوتا",
+        "key_word": ["اسبير", "تويوتا", "اضاءة", "اضواء امامية"],
+        "name": "تويوتا اضواء امامية",
+        "price": 19.99,
         "total_quanitiy": 283,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/doritos.png",
-        "company": "foody",
-        "key_word": ["شبس", "مقبلات", "معلب", "دوريتوز"],
-        "name": "شبس دوريتوز",
-        "price": 1.99,
+        "image_url": "img/products/spares/air_filter.jpg",
+        "company": "تويوتا",
+        "key_word": ["اسبير", "مقدمة السيارة", "هواء"],
+        "name": "فلتر هواء",
+        "price": 7.99,
         "total_quanitiy": 23,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/laze.gif",
-        "company": "foody",
-        "key_word": ["شبس", "مقبلات", "معلب", "ليز"],
-        "name": "شبس ليز",
-        "price": 4.0,
+        "image_url": "img/products/spares/exhaust.jpg",
+        "company": "تويوتا",
+        "key_word": ["اسبير", "مؤخرة السيارة"],
+        "name": "عادم",
+        "price": 17.0,
         "total_quanitiy": 83,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/prengels.jpg",
-        "company": "foody",
-        "key_word": ["شبس", "مقبلات", "معلب", "برينقلز"],
-        "name": "شبس برينقلز",
-        "price": 5.0,
+        "image_url": "img/products/spares/injector_fuel.jpg",
+        "company": "تويوتا",
+        "key_word": ["مجموعة", "المحرك", "وقود"],
+        "name": "حاقن وقود",
+        "price": 10.0,
         "total_quanitiy": 28,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/nutella.jpg",
-        "company": "foody",
-        "key_word": ["شوكولاتة", "معلب"],
-        "name": "نوتيلا",
+        "image_url": "img/products/spares/lexus_fuel_filter.jpg",
+        "company": "لكسيز",
+        "key_word": ["وقود", "مصفاة"],
+        "name": "لكسيز مصقاة وقود",
         "price": 25.0,
         "total_quanitiy": 43,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/bueno.jpg",
-        "company": "foody",
-        "key_word": ["شوكولاتة", "مقبلات", "معلب"],
-        "name": "كندر بوينو",
+        "image_url": "img/products/spares/rubber_boot.jpg",
+        "company": "تويوتا",
+        "key_word": ["مجموعة", "مطاط"],
+        "name": "جلب",
         "price": 10.0,
         "total_quanitiy": 20,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/7days.jpg",
-        "key_word": ["شوكولاتة", "مقبلات", "معلب", "كيك"],
-        "name": "7days",
+        "image_url": "img/products/spares/spark_plug.jpg",
+        "company": "تويوتا",
+        "key_word": ["اسبير", "كهرباء", "محرك"],
+        "name": "شمعات",
         "price": 5.0,
         "total_quanitiy": 200,
         "rate": 5
       },
       {
-        "image_url": "img/products/food/snickers.jpg",
-        "company": "foody",
-        "key_word": ["شوكولاتة", "مقبلات", "معلب"],
-        "name": "سنكرز",
-        "price": 5.0,
+        "image_url": "img/products/spares/tires.jpg",
+        "company": "لكسيز",
+        "key_word": ["جزء"],
+        "name": "لكسيز إطارات 23",
+        "price": 50.0,
         "total_quanitiy": 20,
         "rate": 5
       }

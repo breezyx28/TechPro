@@ -9,8 +9,8 @@ $(document).ready(function () {
     if (c == 'clothes') {
       return items[0].category.clothes;
     }
-    if (c == 'food') {
-      return items[0].category.food;
+    if (c == 'spares') {
+      return items[0].category.spares;
     }
     if (c == 'furniture') {
       return items[0].category.Furniture;
