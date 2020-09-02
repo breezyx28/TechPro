@@ -133,16 +133,22 @@ $(document).ready(function () {
               Code : #${code},
               Quantity : ${quantity},
               Total Price : ${total_price}`,
-    }).then((message) => {
-      if (message == 'OK') {
-        //enable link after request is done
-        $(this).css('pointer-events', 'auto');
-        // alert('تم ....');
-        $.notify('تم ..... ', 'success', {
-          // if autoHide, hide after milliseconds
-          autoHideDelay: 3000,
-        });
-      }
-    });
+    })
+      .then((message) => {
+        if (message == 'OK') {
+          //enable link after request is done
+          $(this).css('pointer-events', 'auto');
+          // alert('تم ....');
+          $.notify('تم ..... ', 'success', {
+            // if autoHide, hide after milliseconds
+            autoHideDelay: 3000,
+          });
+        } else {
+          console.log(message);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   });
 });

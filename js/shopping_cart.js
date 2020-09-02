@@ -287,29 +287,35 @@ $(document).ready(function () {
       setTimeout(
         function () {
           Email.send({
-            SecureToken: 'df7da04b-a5b2-46c6-b9fc-875ff5e529f3',
+            SecureToken: '1d5deb1e-7ef7-4c6b-8a02-2e58fb842d66',
             To: 'mohamedx.28@gmail.com',
             From: 'web.technicalproffessional@gmail.com',
             Subject: 'Multi Orders',
             Body: chceckout(),
-          }).then((message) => {
-            if (message == 'OK') {
-              //enable link after request is done
-              $(this).css('pointer-events', 'auto');
-              localStorage.clear();
-              block_btn(local_check);
-              window.location.reload();
-              // alert('your cart elements has been send Successfuly ....');
-              $.notify(
-                'your cart elements has been send Successfuly ....',
-                'success',
-                {
-                  // if autoHide, hide after milliseconds
-                  autoHideDelay: 3000,
-                },
-              );
-            }
-          });
+          })
+            .then((message) => {
+              if (message == 'OK') {
+                //enable link after request is done
+                $(this).css('pointer-events', 'auto');
+                localStorage.clear();
+                block_btn(local_check);
+                window.location.reload();
+                // alert('your cart elements has been send Successfuly ....');
+                $.notify(
+                  'your cart elements has been send Successfuly ....',
+                  'success',
+                  {
+                    // if autoHide, hide after milliseconds
+                    autoHideDelay: 3000,
+                  },
+                );
+              } else {
+                console.log(message);
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
         }.bind(this),
         200,
       );
