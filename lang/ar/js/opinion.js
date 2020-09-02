@@ -12,7 +12,7 @@ $(document).ready(function () {
       });
     } else {
       Email.send({
-        SecureToken: 'df7da04b-a5b2-46c6-b9fc-875ff5e529f3',
+        SecureToken: '1d5deb1e-7ef7-4c6b-8a02-2e58fb842d66',
         To: 'mohamedx.28@gmail.com',
         From: 'web.technicalproffessional@gmail.com',
         Subject: 'Web Comment',
